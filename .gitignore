@@ -11,3 +11,5 @@ node_modules/
 
 # WebP assets are used by the site; original generations remain local.
 assets/*.png
+
+dist/

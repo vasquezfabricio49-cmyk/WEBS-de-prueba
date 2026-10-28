@@ -57,3 +57,9 @@ Usa una base temporal separada. Comprueba disponibilidad, persistencia, permisos
 Leer `PORKBUN-INSTRUCCIONES.md`. `Dockerfile`, `deploy_entrypoint.py` y `render.yaml` preparan un servicio con disco persistente. Son una opción de despliegue que puede tener coste y no se ha contratado ni publicado. El servidor distingue `shalom.tapandgoweb.com` y `esthetica.tapandgoweb.com` por Host. Cada dominio muestra su propia web en `/`. Añadir ambos dominios al alojamiento y configurar en Porkbun los CNAME que el alojamiento indique. No inventar destinos ni cambiar el DNS principal o de correo.
 
 El arranque del contenedor prepara únicamente la carpeta de datos de esta aplicación en el volumen y después baja privilegios al usuario 10001. El código se copia con permisos compatibles con ese usuario.
+
+## Publicar solo Shalom con Netlify Drop
+
+`npm run export:shalom-netlify` genera `../shalom-netlify.zip` y `dist/shalom-netlify`. Ese ZIP se arrastra directamente a la zona de nuevo proyecto de Netlify: contiene Shalom en la raíz, fuentes y recursos locales, sin servidor Python. Para que la reserva pueda probarse en una subida estática, incluye un adaptador exclusivo de esta exportación: los datos se guardan en localStorage de ese navegador, hay control local de solapes mediante Web Locks y gestión/cancelación local. No hay disponibilidad compartida entre dispositivos, administración central ni citas reales. Todo el flujo lo indica. La aplicación Python/SQLite original no cambia ni utiliza el adaptador.
+
+Tras publicar, añadir `shalom.tapandgoweb.com` desde la configuración de dominios del proyecto y copiar los registros que indique Netlify. El CNAME de Shalom que apuntaba a ChatGPT Site debe sustituirse por el destino real de Netlify; no cambiar los de otros proyectos.
