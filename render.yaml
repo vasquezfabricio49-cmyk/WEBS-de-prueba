@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: beauty-collection-demo
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    envVars:
+      - key: SHALOM_BOOKING_MODE
+        value: demo
+      - key: SHALOM_DATA_DIR
+        value: /var/data/shalom
+      - key: SHALOM_ADMIN_TOKEN
+        generateValue: true
+      - key: SHALOM_HOST
+        value: shalom.tapandgoweb.com
+      - key: LATINO_HOST
+        value: esthetica.tapandgoweb.com
+    disk:
+      name: shalom-agenda
+      mountPath: /var/data
+      sizeGB: 1

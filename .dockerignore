@@ -1,0 +1,10 @@
+.git
+__pycache__
+*.sqlite3*
+.env
+.runtime
+node_modules
+
+.env*
+
+assets/*.png

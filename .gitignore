@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+.runtime/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+node_modules/
+
+.env*
+
+# WebP assets are used by the site; original generations remain local.
+assets/*.png
