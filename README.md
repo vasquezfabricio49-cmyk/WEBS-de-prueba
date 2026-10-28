@@ -67,3 +67,9 @@ Tras publicar, añadir `shalom.tapandgoweb.com` desde la configuración de domin
 ## Publicar Esthetica Latino con Netlify Drop
 
 `npm run export:esthetica-netlify` genera `../esthetica-netlify.zip` y `dist/esthetica-netlify`. Arrastrar ese ZIP como un proyecto nuevo en Netlify: incluye Esthetica Latino en la raíz, sus 12 experiencias, imágenes y fuentes locales. Las consultas de cita se hacen por WhatsApp y no requieren un backend. Añadir `esthetica.tapandgoweb.com` desde la gestión de dominios del nuevo proyecto y copiar exactamente los registros que indique Netlify, sin modificar los de Shalom o Tap & Go.
+
+## El Budare’s: restaurante independiente
+
+Nueva web en `/el-budares/`, con estilo burdeos/rojo y tipografía condensada según el MD de referencia. Tiene 38 referencias de carta, dos precios explícitamente orientativos, filtros, búsqueda, variantes, selección local con totales, descargas y enlaces reales de Glovo/Uber Eats. Los seis enlaces de reseñas se representan como viñetas animadas; los textos, autores y estrellas no se han inventado porque Google Maps devolvió 403. Ver `el-budares/README.md`.
+
+`npm run build:budares`, `npm run test:budares` y `npm run package:budares` compilan, prueban y empaquetan esta web. El paquete es estático y el HTML autónomo no necesita recursos externos. No se ha publicado en chatgpt.site: no hay herramienta de publicación para ese servicio en esta sesión.

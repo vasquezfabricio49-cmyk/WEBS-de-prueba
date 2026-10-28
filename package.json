@@ -9,7 +9,10 @@
     "start": "python3 server.py --port 3001",
     "test:ui": "node tests/ui.spec.cjs",
     "export:shalom-netlify": "python3 scripts/export_netlify.py",
-    "export:esthetica-netlify": "python3 scripts/export_esthetica_netlify.py"
+    "export:esthetica-netlify": "python3 scripts/export_esthetica_netlify.py",
+    "build:budares": "esbuild el-budares/src/budares.js --bundle --minify --format=esm --target=es2022 --outfile=el-budares/assets/budares.js",
+    "test:budares": "node tests/budares.spec.cjs",
+    "package:budares": "python3 scripts/package_budares.py"
   },
   "dependencies": {
     "motion": "14.7.1"

@@ -207,7 +207,7 @@ class Handler(BaseHTTPRequestHandler):
         clinic = 'shalom-beauty-clinique' if host == os.environ.get('SHALOM_HOST','shalom.tapandgoweb.com').lower() else ('esthetica-latino' if host == os.environ.get('LATINO_HOST','esthetica.tapandgoweb.com').lower() else '')
         if clinic and path in ('/', '/index.html', '/reserva.html', '/admin.html', '/privacidad.html'):
             path = '/' + clinic + ('/index.html' if path in ('/','/index.html') else path)
-        allowed = path in ('/', '/index.html') or path.startswith(('/assets/', '/esthetica-latino/', '/shalom-beauty-clinique/'))
+        allowed = path in ('/', '/index.html') or path.startswith(('/assets/', '/esthetica-latino/', '/shalom-beauty-clinique/', '/el-budares/'))
         if not allowed:
             return self.error(404, 'Página no encontrada.')
         file = (ROOT / path.lstrip('/')).resolve()
