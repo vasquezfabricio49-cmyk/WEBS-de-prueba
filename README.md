@@ -63,3 +63,7 @@ El arranque del contenedor prepara únicamente la carpeta de datos de esta aplic
 `npm run export:shalom-netlify` genera `../shalom-netlify.zip` y `dist/shalom-netlify`. Ese ZIP se arrastra directamente a la zona de nuevo proyecto de Netlify: contiene Shalom en la raíz, fuentes y recursos locales, sin servidor Python. Para que la reserva pueda probarse en una subida estática, incluye un adaptador exclusivo de esta exportación: los datos se guardan en localStorage de ese navegador, hay control local de solapes mediante Web Locks y gestión/cancelación local. No hay disponibilidad compartida entre dispositivos, administración central ni citas reales. Todo el flujo lo indica. La aplicación Python/SQLite original no cambia ni utiliza el adaptador.
 
 Tras publicar, añadir `shalom.tapandgoweb.com` desde la configuración de dominios del proyecto y copiar los registros que indique Netlify. El CNAME de Shalom que apuntaba a ChatGPT Site debe sustituirse por el destino real de Netlify; no cambiar los de otros proyectos.
+
+## Publicar Esthetica Latino con Netlify Drop
+
+`npm run export:esthetica-netlify` genera `../esthetica-netlify.zip` y `dist/esthetica-netlify`. Arrastrar ese ZIP como un proyecto nuevo en Netlify: incluye Esthetica Latino en la raíz, sus 12 experiencias, imágenes y fuentes locales. Las consultas de cita se hacen por WhatsApp y no requieren un backend. Añadir `esthetica.tapandgoweb.com` desde la gestión de dominios del nuevo proyecto y copiar exactamente los registros que indique Netlify, sin modificar los de Shalom o Tap & Go.
