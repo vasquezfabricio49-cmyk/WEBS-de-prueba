@@ -73,3 +73,7 @@ Tras publicar, añadir `shalom.tapandgoweb.com` desde la configuración de domin
 Nueva web en `/el-budares/`, con estilo burdeos/rojo y tipografía condensada según el MD de referencia. Tiene 38 referencias de carta, dos precios explícitamente orientativos, filtros, búsqueda, variantes, selección local con totales, descargas y enlaces reales de Glovo/Uber Eats. Los seis enlaces de reseñas se representan como viñetas animadas; los textos, autores y estrellas no se han inventado porque Google Maps devolvió 403. Ver `el-budares/README.md`.
 
 `npm run build:budares`, `npm run test:budares` y `npm run package:budares` compilan, prueban y empaquetan esta web. El paquete es estático y el HTML autónomo no necesita recursos externos. No se ha publicado en chatgpt.site: no hay herramienta de publicación para ese servicio en esta sesión.
+
+## Restaurante de fusión vasca y boliviana
+
+Nuevo proyecto independiente en [`restaurante-demo/`](restaurante-demo/README.md): portada, carta interactiva con imágenes generadas, galería y reservas persistentes de demostración. No cambia las webs anteriores. Desde esta carpeta, arrancar con `python3 restaurante-demo/server.py --host 0.0.0.0 --port 3002` y abrir el puerto 3002 de Codespaces. También puede abrirse `restaurante-demo.code-workspace` en VS Code. Las reservas y los precios son provisionales; no se ha publicado la web.
