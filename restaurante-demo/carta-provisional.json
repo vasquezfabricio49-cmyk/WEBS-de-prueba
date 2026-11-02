@@ -1,0 +1,53 @@
+{
+  "nota": "Platos, descripciones y precios del diseño de referencia, pendientes de confirmación. Imágenes ilustrativas generadas con IA.",
+  "platos": [
+    {
+      "id": "chuleton",
+      "nombre": "Chuletón de Viejo a la Brasa",
+      "origen": "vasco",
+      "descripcion": "Madurado durante 45 días, asado con carbón de encina y sal gorda.",
+      "precio": 52,
+      "unidad": "kg",
+      "moneda": "EUR",
+      "maridaje": "Rioja Alavesa Reserva",
+      "imagen": "images/chuleton.webp",
+      "provisional": true
+    },
+    {
+      "id": "silpancho",
+      "nombre": "Silpancho de Entraña Premium",
+      "origen": "boliviano",
+      "descripcion": "Entraña con especias andinas, arroz, patatas doradas y huevo de corral.",
+      "precio": 22,
+      "unidad": "ración",
+      "moneda": "EUR",
+      "maridaje": "Tinto de Altura (Valle de Cinti)",
+      "imagen": "images/silpancho.webp",
+      "provisional": true
+    },
+    {
+      "id": "kokotxas",
+      "nombre": "Kokotxas de Bacalao al Pil-Pil de Ají Amarillo",
+      "origen": "fusion",
+      "descripcion": "Pil-pil tradicional vasco con el toque aromático del ají amarillo.",
+      "precio": 28,
+      "unidad": "ración",
+      "moneda": "EUR",
+      "maridaje": "Txakoli de Bizkaia",
+      "imagen": "images/kokotxas.webp",
+      "provisional": true
+    },
+    {
+      "id": "cunape",
+      "nombre": "Cuñapé de Idiazabal",
+      "origen": "fusion",
+      "descripcion": "Pan de yuca boliviano con queso ahumado de Idiazabal.",
+      "precio": 8,
+      "unidad": "ración",
+      "moneda": "EUR",
+      "maridaje": "Sidra Vasca Natural",
+      "imagen": "images/cunape.webp",
+      "provisional": true
+    }
+  ]
+}
