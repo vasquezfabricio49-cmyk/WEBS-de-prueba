@@ -1,0 +1,160 @@
+/* Tap & Go brand: midnight blue, electric blue, cyan and silver.
+   Scoped to the studio landing so client websites keep their own identities. */
+body.tapgo {
+  color-scheme: dark;
+  --paper: #060e20;
+  --ink: #edf4ff;
+  --muted: #aebdd6;
+  --accent: #70b8ff;
+  --soft: #0d1c36;
+  --line: #89b5f52e;
+  --gold: #59caff;
+  --scene: #08152e;
+  --scene-deep: #123b75;
+  --pill: #122b50;
+  background: var(--paper);
+  color: var(--ink);
+}
+.tapgo ::selection { background: #2563eb; color: #fff; }
+.tapgo :is(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid #70d6ff;
+  outline-offset: 5px;
+}
+.tapgo .header,
+.tapgo .header.scrolled {
+  background: #060e20ef;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 8px 35px #0002;
+  backdrop-filter: blur(20px);
+}
+.tapgo .tapgo-logo { color: #f1f6ff; }
+.tapgo .logo-mark { color: #6ccaff; }
+.tapgo .nav-items > a {
+  border-color: #8fbaff30;
+  background: #0e203a80;
+  color: #dce8fb;
+}
+.tapgo .nav-items > a:hover { background: #17345b; }
+.tapgo .button {
+  background: #2265e8;
+  border-color: #397cf6;
+  color: #fff;
+  box-shadow: 0 10px 32px #1053d52b;
+}
+.tapgo .button:hover {
+  background: #357bf8;
+  border-color: #6ba4ff;
+  box-shadow: 0 12px 35px #2169ed42;
+}
+.tapgo .button.secondary {
+  background: #0d213d;
+  color: #dceaff;
+  border-color: #80adf54d;
+}
+.tapgo .button.cream,
+.tapgo .studio-cta .button {
+  background: #e4efff;
+  border-color: #e4efff;
+  color: #0a2045;
+}
+.tapgo .scene-hero {
+  background: linear-gradient(125deg, #050d1d 5%, #0b1c3b 60%, #0b2850);
+}
+.tapgo .scene-backdrop {
+  background: radial-gradient(ellipse at 73% 48%, #1972d64a, transparent 52%),
+    radial-gradient(ellipse at 15% 10%, #143a7838, transparent 55%);
+}
+.tapgo .scene-grain { opacity: .045; }
+.tapgo .scene-title { color: #f1f5ff; }
+.tapgo .scene-title em { color: #7fc1ff; }
+.tapgo .scene-copy { color: #bdcce2; }
+.tapgo .hero-object[src$=".webp"] {
+  filter: hue-rotate(180deg) saturate(.8) drop-shadow(0 25px 48px #1687ff30);
+}
+.tapgo .object-glow {
+  background: radial-gradient(ellipse, #3c9eff4d, transparent 65%);
+}
+.tapgo .scene-pedestal {
+  background: radial-gradient(ellipse, #2b83d526, transparent 65%);
+}
+.tapgo .floating-note {
+  background: #102441c9;
+  border-color: #98c5ff3d;
+  box-shadow: 0 16px 40px #0004, inset 0 1px #b0d6ff24;
+}
+.tapgo .floating-note strong { color: #e8f2ff; }
+.tapgo .floating-note small { color: #b6c9e5; }
+.tapgo .note-icon { background: #19385f; color: #8ed9ff; }
+.tapgo .note-index { background: #346edb; color: white; }
+.tapgo .hero-side { color: #9fb8dc; }
+.tapgo .marquee {
+  background: #102649;
+  color: #dfeeff;
+  border-block: 1px solid #73a7ed26;
+}
+.tapgo .marquee-track i { color: #64c8ff; }
+.tapgo .work-card,
+.tapgo .work-card:nth-child(2) {
+  background: #0d1c34;
+  border-color: #93bbf230;
+}
+.tapgo .work-card:hover { box-shadow: 0 20px 55px #0005; }
+.tapgo .work-visual { background: linear-gradient(145deg, #122e52, #0a162d); }
+.tapgo .work-card:nth-child(2) .work-visual {
+  background: linear-gradient(145deg, #152a52, #0c1936);
+}
+.tapgo .work-browser {
+  background: #102440;
+  border-color: #9cc5ff40;
+  box-shadow: 0 25px 40px #0005;
+}
+.tapgo .browser-dots { background: #132b4c; }
+.tapgo .browser-dots i { background: #86b7ee77; }
+.tapgo .studio-services {
+  background: linear-gradient(135deg, #0c1b34, #0a172e);
+  border-block: 1px solid #7fa8e026;
+}
+.tapgo .studio-tile {
+  background: #10213e;
+  border-color: #89b5f52e;
+}
+.tapgo .studio-tile:first-child {
+  background: linear-gradient(145deg, #164078, #10294f);
+  color: #f1f6ff;
+}
+.tapgo .studio-tile:first-child p { color: #bfd3ef; }
+.tapgo .studio-tile:hover { box-shadow: 0 16px 35px #0004; }
+.tapgo .tile-symbol { color: #67c5ff; }
+.tapgo .studio-cta {
+  background: radial-gradient(ellipse at 50% 0, #17427b, transparent 75%), #09162c;
+  color: #edf4ff;
+  border-top: 1px solid #82b7ff30;
+}
+.tapgo .studio-cta :is(.eyebrow, em) { color: #8ccfff; }
+.tapgo .studio-cta p { color: #b9cde8; }
+.tapgo .tapgo-footer { background: #050c1a; color: #e1edff; }
+.tapgo .tapgo-footer :is(.footer-info, .footer-bottom) { color: #a5b8d5; }
+.tapgo .project-dialog {
+  background: #0c1a31;
+  color: #edf4ff;
+  border-color: #87b6f440;
+  box-shadow: 0 35px 140px #0009;
+}
+.tapgo dialog::backdrop { background: #020818c9; }
+.tapgo .project-dialog :is(input, select, textarea) {
+  background: #071327;
+  color: #edf4ff;
+  border-color: #6a9fdf55;
+}
+.tapgo .project-dialog :is(input, textarea)::placeholder { color: #97abc9; }
+.tapgo .dialog-close { background: #152c4b; color: #dfeeff; }
+.tapgo .success-mark { background: #163c65; color: #8dd7ff; }
+.tapgo .skip { background: #2563eb; color: #fff; }
+@media (max-width: 700px) {
+  .tapgo .header .nav-items { background: #08152b; box-shadow: 0 18px 28px #0005; }
+  .tapgo .header .menu-toggle { background: #102440; color: #e1edff; }
+}
+.tapgo .faq details { background: #10213c; border-color: #89b5f52e; }
+.tapgo .faq details summary { color: #e7f0ff; }
+.tapgo .faq details p { color: #b5c7e0; }
+.tapgo .tile-symbol { filter: grayscale(1); }

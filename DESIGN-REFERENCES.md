@@ -29,3 +29,8 @@ No se afirma que se hayan integrado todos estos frameworks: se evita combinar ru
 Bodoni Moda variable (normal e italic) y DM Sans variable, descargadas del repositorio público Google Fonts con sus licencias SIL OFL. Se sirven localmente. Los originales de imágenes generadas permanecen en `/workspace/generated_images`; el frontend usa versiones WebP sin añadir interfaces de redes sociales. Las previsualizaciones de proyectos son capturas de nuestras propias páginas, no capturas de Instagram ni de la referencia.
 
 El catálogo conserva la procedencia y límites de cada entrada en `assets/catalog.json`. No se fabrican reseñas, calificaciones, tarifas, direcciones exactas ni resultados clínicos. La portada de Tap & Go permite preparar y descargar un briefing; no simula un envío de contacto a una dirección no verificada.
+
+
+## Tap & Go: prioridad de marca, 5 de noviembre de 2026
+
+Por petición explícita del usuario, la portada del estudio usa azul marino oscuro, azul eléctrico, cian y plata. La capa `assets/tapgo-dark.css` se aplica únicamente a `body.tapgo`; las experiencias de los clientes conservan sus propias identidades. Se mantienen composición y funcionalidades. Se conserva el visual de cristal y plata incorporado en GitHub; los recursos NFC anteriores en WebP reciben un tratamiento de color azul si vuelven a utilizarse. No volver a crema, marrón o dorado en esta portada sin una instrucción posterior.
