@@ -1,0 +1,11 @@
+{
+  "status": "prepared_not_submitted",
+  "provider": "APIMart",
+  "operation": "image_generation",
+  "requested_model_display_name": "GPT Image 2 Official",
+  "requested_aspect_ratio": "16:9",
+  "requested_quality": "medium",
+  "prompt": "Create one polished 16:9 desktop ecommerce website design for an artisanal cookie brand called MIGA. A premium, playful, hyperrealistic 3D art direction: warm vanilla cream background, chocolate brown typography, toasted caramel accents and a restrained pistachio green. Hero with large chunky 3D chocolate-chip cookies floating at different depths, physically believable soft studio lighting, crisp crumb and melted chocolate textures, contact shadows and subtle depth of field. Beautiful oversized headline in Spanish 'Un mordisco. Toda la felicidad.' Clean navigation with Tienda, Nuestra historia and Carrito. Main button 'Quiero mis galletas'. Below the hero, a tasteful product grid with four distinct flavors, realistic 3D cookie imagery, short Spanish names and clearly readable euro prices. Add a small elegant cart preview and restrained ecommerce details. Professional typography, generous spacing, disciplined grid, cohesive premium brand identity, realistic desktop web interface mockup filling the canvas, no browser chrome, no device frame, no watermarks, no existing brand logos. Make the cookies look delicious and materially realistic rather than plastic. This is a single finished website concept image, not source code and not a collage of screens.",
+  "delivery": "Return the actual downloadable image URL supplied by APIMart.",
+  "requires_before_submission": ["Live model identifier lookup", "Current schema verification of 16:9 and medium", "Network access", "Secure APIMART_API_KEY binding"]
+}

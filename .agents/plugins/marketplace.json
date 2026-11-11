@@ -1,0 +1,10 @@
+{
+  "name": "webs-personal-plugins",
+  "interface": {"displayName": "Plugins personales"},
+  "plugins": [{
+    "name": "apimart-media",
+    "source": {"source": "local", "path": "./plugins/apimart-media"},
+    "policy": {"installation": "AVAILABLE"},
+    "category": "Creativity"
+  }]
+}

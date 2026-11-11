@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "apimart": {
+      "type": "http",
+      "url": "https://mcp.apimart.ai/mcp",
+      "bearer_token_env_var": "APIMART_API_KEY"
+    }
+  }
+}

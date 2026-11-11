@@ -1,0 +1,16 @@
+{
+  "name": "apimart-media",
+  "version": "1.0.0",
+  "description": "Integración personal para descubrir modelos de APIMart y generar imágenes y vídeos con su MCP oficial.",
+  "author": {"name": "vasquezfabricio49-cmyk"},
+  "repository": "https://github.com/vasquezfabricio49-cmyk/WEBS-de-prueba/tree/main/plugins/apimart-media",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "APIMart Media",
+    "shortDescription": "Imágenes y vídeos con modelos disponibles en APIMart",
+    "category": "Creativity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": ["Genera una imagen con APIMart", "Crea un vídeo con un modelo de APIMart", "Consulta mis modelos disponibles de imagen y vídeo"]
+  }
+}

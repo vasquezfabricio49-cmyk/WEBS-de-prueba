@@ -1,0 +1,5 @@
+# Alternativa para clientes Codex sin instalación de plugins locales.
+# Fusiona esta sección con la configuración del cliente; no dupliques la sección.
+[mcp_servers.apimart]
+url = "https://mcp.apimart.ai/mcp"
+bearer_token_env_var = "APIMART_API_KEY"
