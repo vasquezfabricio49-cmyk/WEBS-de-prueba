@@ -5,8 +5,8 @@
     "description": "Al horno, jugosas y doradas. Propuesta de relleno de carne o pollo.",
     "price": 3.5,
     "category": "Para empezar",
-    "photo": 0,
-    "featured": true
+    "featured": true,
+    "image": "images/saltenas.webp"
   },
   {
     "id": "plato-02",
@@ -14,8 +14,8 @@
     "description": "Empanadas fritas, crujientes por fuera, con llajua para acompañar.",
     "price": 4,
     "category": "Para empezar",
-    "photo": 1,
-    "featured": false
+    "featured": false,
+    "image": "images/tucumanas.webp"
   },
   {
     "id": "plato-03",
@@ -23,8 +23,8 @@
     "description": "Panadería paceña: masa horneada con un relleno de queso.",
     "price": 3.5,
     "category": "Para empezar",
-    "photo": 2,
-    "featured": false
+    "featured": false,
+    "image": "images/llauchas.webp"
   },
   {
     "id": "plato-04",
@@ -32,8 +32,8 @@
     "description": "Bocados horneados de almidón de yuca y queso, típicos del oriente.",
     "price": 4.5,
     "category": "Para empezar",
-    "photo": 3,
-    "featured": false
+    "featured": false,
+    "image": "images/cunape.webp"
   },
   {
     "id": "plato-05",
@@ -41,8 +41,8 @@
     "description": "Maíz tierno envuelto en su propia hoja. Propuesta con queso.",
     "price": 5,
     "category": "Para empezar",
-    "photo": 4,
-    "featured": false
+    "featured": false,
+    "image": "images/humintas.webp"
   },
   {
     "id": "plato-06",
@@ -50,8 +50,8 @@
     "description": "Masa dorada y queso fundido. Una propuesta para abrir el apetito.",
     "price": 4,
     "category": "Para empezar",
-    "photo": 5,
-    "featured": false
+    "featured": false,
+    "image": "images/empanadas-queso.webp"
   },
   {
     "id": "plato-07",
@@ -59,8 +59,8 @@
     "description": "Carne de res empanada, arroz, patata, huevo y ensalada fresca.",
     "price": 15.5,
     "category": "Tradición",
-    "photo": 6,
-    "featured": true
+    "featured": true,
+    "image": "images/silpancho.webp"
   },
   {
     "id": "plato-08",
@@ -68,8 +68,8 @@
     "description": "Tiras de res, salchicha, patatas y verduras. Un clásico para compartir.",
     "price": 19.5,
     "category": "Tradición",
-    "photo": 7,
-    "featured": true
+    "featured": true,
+    "image": "images/pique-macho.webp"
   },
   {
     "id": "plato-09",
@@ -77,8 +77,8 @@
     "description": "Pollo con salsa de ají amarillo, patata y acompañamientos andinos.",
     "price": 14.5,
     "category": "Tradición",
-    "photo": 8,
-    "featured": false
+    "featured": false,
+    "image": "images/sajta.webp"
   },
   {
     "id": "plato-10",
@@ -86,8 +86,8 @@
     "description": "Pollo en salsa de ají colorado con arroz y patata.",
     "price": 14.5,
     "category": "Tradición",
-    "photo": 9,
-    "featured": false
+    "featured": false,
+    "image": "images/picante-pollo.webp"
   },
   {
     "id": "plato-11",
@@ -95,8 +95,8 @@
     "description": "Cerdo dorado acompañado de mote y patata. Sabor para compartir.",
     "price": 17,
     "category": "Tradición",
-    "photo": 10,
-    "featured": false
+    "featured": false,
+    "image": "images/chicharron.webp"
   },
   {
     "id": "plato-12",
@@ -104,8 +104,8 @@
     "description": "Propuesta de pescado dorado con arroz, ensalada y limón.",
     "price": 18.5,
     "category": "Tradición",
-    "photo": 11,
-    "featured": false
+    "featured": false,
+    "image": "images/pacu.webp"
   },
   {
     "id": "plato-13",
@@ -113,8 +113,8 @@
     "description": "Brochetas de corazón de res con patata y salsa de ají.",
     "price": 12,
     "category": "Al fuego",
-    "photo": 12,
-    "featured": false
+    "featured": false,
+    "image": "images/anticuchos.webp"
   },
   {
     "id": "plato-14",
@@ -122,8 +122,8 @@
     "description": "Corte de res a la brasa con arroz y patatas.",
     "price": 20,
     "category": "Al fuego",
-    "photo": 13,
-    "featured": false
+    "featured": false,
+    "image": "images/churrasco.webp"
   },
   {
     "id": "plato-15",
@@ -131,8 +131,8 @@
     "description": "Pollo asado con arroz, patatas y fideos. Inspirado en tus fotos.",
     "price": 13.5,
     "category": "Al fuego",
-    "photo": 14,
-    "featured": true
+    "featured": true,
+    "image": "images/pollo-brasa.webp"
   },
   {
     "id": "plato-16",
@@ -140,8 +140,8 @@
     "description": "Propuesta de res cocinada lentamente con arroz y guarnición.",
     "price": 18,
     "category": "Al fuego",
-    "photo": 15,
-    "featured": false
+    "featured": false,
+    "image": "images/keperi.webp"
   },
   {
     "id": "plato-17",
@@ -149,8 +149,8 @@
     "description": "Charque de res desmenuzado con mote, patata y huevo.",
     "price": 16.5,
     "category": "Al fuego",
-    "photo": 16,
-    "featured": false
+    "featured": false,
+    "image": "images/charquekan.webp"
   },
   {
     "id": "plato-18",
@@ -158,8 +158,8 @@
     "description": "Cerdo con salsa de ají colorado y acompañamientos andinos.",
     "price": 16,
     "category": "Al fuego",
-    "photo": 17,
-    "featured": false
+    "featured": false,
+    "image": "images/fritanga.webp"
   },
   {
     "id": "plato-19",
@@ -167,8 +167,8 @@
     "description": "Caldo cremoso de cacahuete con verduras, carne y patatas finas.",
     "price": 9.5,
     "category": "De cuchara",
-    "photo": 18,
-    "featured": true
+    "featured": true,
+    "image": "images/sopa-mani.webp"
   },
   {
     "id": "plato-20",
@@ -176,8 +176,8 @@
     "description": "Sopa andina con chuño, carne y verduras de temporada.",
     "price": 10,
     "category": "De cuchara",
-    "photo": 19,
-    "featured": false
+    "featured": false,
+    "image": "images/chairo.webp"
   },
   {
     "id": "plato-21",
@@ -185,8 +185,8 @@
     "description": "Caldo de cerdo con ají amarillo, mote y chuño.",
     "price": 14,
     "category": "De cuchara",
-    "photo": 20,
-    "featured": false
+    "featured": false,
+    "image": "images/fricase.webp"
   },
   {
     "id": "plato-22",
@@ -194,8 +194,8 @@
     "description": "Quinua, verduras y un caldo reconfortante de inspiración andina.",
     "price": 9,
     "category": "De cuchara",
-    "photo": 21,
-    "featured": false
+    "featured": false,
+    "image": "images/sopa-quinua.webp"
   },
   {
     "id": "plato-23",
@@ -203,8 +203,8 @@
     "description": "Sopa de calabaza, maíz y patata de inspiración regional.",
     "price": 9,
     "category": "De cuchara",
-    "photo": 22,
-    "featured": false
+    "featured": false,
+    "image": "images/locro.webp"
   },
   {
     "id": "plato-24",
@@ -212,8 +212,8 @@
     "description": "Sopa espesa de tradición potosina. Servicio en piedra no incluido.",
     "price": 12,
     "category": "De cuchara",
-    "photo": 23,
-    "featured": false
+    "featured": false,
+    "image": "images/kalapurka.webp"
   },
   {
     "id": "plato-25",
@@ -221,8 +221,8 @@
     "description": "Arroz con charque, huevo y plátano: un clásico del oriente.",
     "price": 14,
     "category": "De la tierra",
-    "photo": 24,
-    "featured": true
+    "featured": true,
+    "image": "images/majadito.webp"
   },
   {
     "id": "plato-26",
@@ -230,8 +230,8 @@
     "description": "Arroz cremoso con queso, pensado para acompañar o compartir.",
     "price": 7,
     "category": "De la tierra",
-    "photo": 25,
-    "featured": false
+    "featured": false,
+    "image": "images/arroz-queso.webp"
   },
   {
     "id": "plato-27",
@@ -239,8 +239,8 @@
     "description": "Carne picada con ají, guisantes y patata, acompañada de arroz.",
     "price": 13.5,
     "category": "De la tierra",
-    "photo": 26,
-    "featured": false
+    "featured": false,
+    "image": "images/saice.webp"
   },
   {
     "id": "plato-28",
@@ -248,8 +248,8 @@
     "description": "Fideos con salsa de ají colorado, carne y patata.",
     "price": 12.5,
     "category": "De la tierra",
-    "photo": 27,
-    "featured": false
+    "featured": false,
+    "image": "images/aji-fideo.webp"
   },
   {
     "id": "plato-29",
@@ -257,8 +257,8 @@
     "description": "Quinua con verduras, hierbas y un aliño fresco.",
     "price": 11,
     "category": "De la tierra",
-    "photo": 28,
-    "featured": false
+    "featured": false,
+    "image": "images/ensalada-quinua.webp"
   },
   {
     "id": "plato-30",
@@ -266,8 +266,8 @@
     "description": "Patatas con salsa de queso y ají, huevo y hojas frescas.",
     "price": 9.5,
     "category": "De la tierra",
-    "photo": 29,
-    "featured": false
+    "featured": false,
+    "image": "images/huancaina.webp"
   },
   {
     "id": "plato-31",
@@ -275,8 +275,8 @@
     "description": "Bebida tradicional de melocotón deshidratado y especias.",
     "price": 4,
     "category": "Dulces y bebidas",
-    "photo": 30,
-    "featured": false
+    "featured": false,
+    "image": "images/mocochinchi.webp"
   },
   {
     "id": "plato-32",
@@ -284,8 +284,8 @@
     "description": "Bebida caliente de maíz morado, canela y clavo.",
     "price": 4,
     "category": "Dulces y bebidas",
-    "photo": 31,
-    "featured": false
+    "featured": false,
+    "image": "images/api.webp"
   },
   {
     "id": "plato-33",
@@ -293,8 +293,8 @@
     "description": "Propuesta de postre helado con aroma de canela.",
     "price": 5.5,
     "category": "Dulces y bebidas",
-    "photo": 32,
-    "featured": false
+    "featured": false,
+    "image": "images/helado.webp"
   },
   {
     "id": "plato-34",
@@ -302,8 +302,8 @@
     "description": "Dulces de coco en pequeños bocados dorados.",
     "price": 4.5,
     "category": "Dulces y bebidas",
-    "photo": 33,
-    "featured": false
+    "featured": false,
+    "image": "images/cocadas.webp"
   },
   {
     "id": "plato-35",
@@ -311,8 +311,8 @@
     "description": "Masa frita, ligera y dorada, con un toque de miel de caña.",
     "price": 5.5,
     "category": "Dulces y bebidas",
-    "photo": 34,
-    "featured": false
+    "featured": false,
+    "image": "images/bunuelos.webp"
   },
   {
     "id": "plato-36",
@@ -320,7 +320,7 @@
     "description": "Un final suave: arroz, leche y canela.",
     "price": 5,
     "category": "Dulces y bebidas",
-    "photo": 35,
-    "featured": false
+    "featured": false,
+    "image": "images/arroz-leche.webp"
   }
 ]

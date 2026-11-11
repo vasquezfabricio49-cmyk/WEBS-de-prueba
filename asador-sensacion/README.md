@@ -1,6 +1,6 @@
-# Asador Sensación · Fuego, raíces y encuentro
+# Asador Sensación · Bolivia en cada bocado
 
-Web independiente con estética oscura, fotografía protagonista, naranja fuego y tipografía editorial, siguiendo la composición de la captura facilitada. Animación breve de apertura, sin bloquear acciones; respeta movimiento reducido.
+Web independiente con crema, rojo y lima, tipografía contundente y una escena gastronómica interactiva en la apertura. La portada anterior basada en la captura oscura se ha sustituido. La referencia solicitada es tacosmyguey.com, pero su acceso sigue denegado por la política de red; no se afirma que esta versión sea una reproducción verificada de esa web. Se han guardado los dominios tacosmyguey.com y www.tacosmyguey.com en el borrador del entorno, pendientes de que el usuario guarde y aplique el acceso.
 
 ## Abrir con Copilot / Codespaces
 
@@ -20,7 +20,9 @@ Abrir el puerto **3003** desde el panel Puertos. No abrir 3002, que corresponde 
 
 Se intentó consultar `https://en.wikipedia.org/wiki/Bolivian_cuisine` como referencia general; la política de red denegó el acceso. También estaban bloqueados Maps y tacosmyguey.com. La selección se elaboró a partir de platos tradicionales conocidos, sin atribuir fuentes no consultadas ni afirmar que el restaurante los sirve.
 
-Imágenes nuevas generadas con IA: portada panorámica y lámina de 36 ilustraciones fotográficas de platos, en el mismo estilo de luz cálida y fondo oscuro. Las tarjetas muestran celdas de esa lámina mediante CSS. Son representaciones artísticas, no fotografías de platos reales ni documentación exacta de recetas. Las fotos originales del chat no estaban disponibles como archivos locales; no se presentan estas imágenes como fotos del restaurante. Fuentes locales Bodoni Moda y DM Sans, licencias adjuntas.
+Imágenes nuevas generadas con IA: **36 fotografías ilustrativas individuales**, cada una con al menos 1024 píxeles de ancho, en un mismo formato de plato oscuro sobre fondo crema. Se elimina la lámina anterior y sus celdas de baja resolución. Los WebP se cargan de forma diferida, con dimensiones declaradas para evitar saltos. Los PNG originales de generación permanecen fuera del checkout en el entorno; los WebP se han codificado con ffmpeg sin cambiar la composición. Son representaciones artísticas, no fotografías de platos reales ni documentación exacta de recetas. Las fotos originales del chat no se presentan como si fueran estas imágenes. Fuentes locales Anton y DM Sans, con licencias adjuntas. Las fuentes editoriales antiguas se conservan como recursos previos, pero ya no se usan.
+
+La apertura utiliza un pique macho y un aderezo generados con fondo transparente, sombras, capas CSS 3D, iluminación que sigue al cursor y una llegada escalonada del plato y los elementos de primer plano. Tres botones permiten cambiar el plato destacado; la transición espera a que la imagen esté decodificada. El botón de repetición vuelve a ejecutar la entrada. No se captura el scroll ni se impide actuar durante la animación. Se desactivan profundidad y animaciones con movimiento reducido; se cancelan actualizaciones al salir de la escena o al ocultarse la pestaña. La carta y las reservas funcionan sin estos efectos, implementados en experience.js sin dependencias adicionales.
 
 ## Solicitudes de mesa
 
@@ -40,4 +42,4 @@ Desde la raíz, con las dependencias del package-lock principal instaladas:
 node asador-sensacion/tests/ui.cjs
 ```
 
-Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); verifica carta, imágenes, filtros, orden, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.
+Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); 130 comprobaciones: verifica carta, disponibilidad de las 36 imágenes individuales, resolución, filtros, orden, cambio de platos de la portada, profundidad al mover el cursor, reinicio de la entrada, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.

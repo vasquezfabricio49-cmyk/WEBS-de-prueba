@@ -22,8 +22,28 @@ const {chromium}=require('playwright');
    for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'no overflow '+width);}
    if(reducedMotion==='no-preference')await page.waitForFunction(()=>getComputedStyle(document.querySelector('.opening')).visibility==='hidden');
    await page.screenshot({path:'/tmp/sensacion-redesign-desktop.png'});
-   check((await page.request.get(base+'/images/carta-boliviana-ia.png')).ok(),'atlas loads');
-   check((await page.request.get(base+'/images/asador-hero-ia.png')).ok(),'hero loads');
+   check(await page.locator('.card img').evaluateAll(images=>new Set(images.map(img=>img.src)).size)===36,'36 distinct individual photos');
+   const catalog=JSON.parse(require('node:fs').readFileSync(path.join(root,'catalog.json'),'utf8'));
+   for(const dish of catalog)check((await page.request.get(base+'/'+dish.image)).ok(),'photo available: '+dish.name);
+   await page.locator('.card img').first().evaluate(image=>image.decode());
+   check(await page.locator('.card img').first().evaluate(image=>image.naturalWidth>=1024),'high resolution dish photos');
+   check((await page.request.get(base+'/images/hero-pique.webp')).ok(),'transparent hero loads');
+   check((await page.request.get(base+'/images/garnish.webp')).ok(),'foreground garnish loads');
+   await page.locator('[data-hero=saltenas]').click();await page.waitForFunction(()=>document.querySelector('[data-hero=saltenas]').getAttribute('aria-pressed')==='true');
+   check((await page.locator('#hero-dish').getAttribute('src')).includes('saltenas.webp'),'hero dish switch');
+   await page.locator('[data-hero=pollo-brasa]').click();await page.waitForFunction(()=>document.querySelector('[data-hero=pollo-brasa]').getAttribute('aria-pressed')==='true');
+   check((await page.locator('#hero-dish').getAttribute('src')).includes('pollo-brasa.webp'),'hero third dish');
+   await page.locator('[data-hero=pique-macho]').click();await page.waitForFunction(()=>document.querySelector('[data-hero=pique-macho]').getAttribute('aria-pressed')==='true');
+   const scene=await page.locator('#hero-scene').boundingBox();await page.mouse.move(scene.x+scene.width*.8,scene.y+scene.height*.45);
+   if(reducedMotion==='no-preference'){
+    await page.waitForFunction(()=>document.querySelector('#food-stage').style.getPropertyValue('--ry')!=='');
+    check(await page.locator('#food-stage').evaluate(el=>Math.abs(parseFloat(el.style.getPropertyValue('--ry')))>0),'pointer changes depth');
+    await page.locator('#replay-intro').click();await page.waitForTimeout(100);
+    check(await page.locator('.dish-float').evaluate(el=>el.getAnimations().some(animation=>animation.playState==='running')),'entry animation replays');
+   }else check(await page.locator('#food-stage').evaluate(el=>el.style.getPropertyValue('--ry')===''),'reduced motion disables pointer tilt');
+   await page.mouse.move(5,5);
+   check(await page.locator('#food-stage').evaluate(el=>el.style.getPropertyValue('--ry')===''),'depth resets after pointer leaves');
+
    await page.getByRole('button',{name:'Al fuego',exact:true}).click();check(await page.locator('.card').count()===6,'category filter');
    await page.getByRole('button',{name:'Todo',exact:true}).click();await page.locator('#search').fill('quinua');check(await page.locator('.card').count()===2,'search');
    await page.locator('#search').fill('impossible-dish');check(await page.locator('#empty').isVisible(),'empty state');await page.locator('#reset').click();check(await page.locator('.card').count()===36,'reset');
