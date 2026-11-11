@@ -1,27 +1,43 @@
-# Asador Sensación
+# Asador Sensación · Fuego, raíces y encuentro
 
-Proyecto independiente. Carta y precios propuestos; nombres y composición de platos deben validarse. Datos de contacto facilitados por el usuario: Amaia Kalea, 2, 48940, Bizkaia; 946 09 59 75. No se ha verificado Maps ni la referencia tacosmyguey.com porque el proxy denegó ambos dominios. El teléfono se usa solo para llamadas.
+Web independiente con estética oscura, fotografía protagonista, naranja fuego y tipografía editorial, siguiendo la composición de la captura facilitada. Animación breve de apertura, sin bloquear acciones; respeta movimiento reducido.
 
-## Inicio
+## Abrir con Copilot / Codespaces
 
-Desde la raíz del repositorio:
+Desde la raíz de **WEBS-de-prueba**, actualizar primero el checkout conservando cambios locales. Ejecutar:
 
 ```sh
 python3 asador-sensacion/server.py --host 0.0.0.0 --port 3003
 ```
 
-Python 3.12+, sin paquetes externos. Modo predeterminado: preparar y descargar solicitud, llamar para comunicarla; no se envía ni confirma una reserva. Funciona también como web estática en GitHub Pages en `/asador-sensacion/` si el repositorio ya publica su raíz. Subir a GitHub no configura Pages ni despliega Python.
+Abrir el puerto **3003** desde el panel Puertos. No abrir 3002, que corresponde al restaurante anterior. También se incluye `asador-sensacion.code-workspace` con una tarea de arranque. No se ha configurado un despliegue público nuevo.
 
-## Registro compartido opcional
+## Carta y fotografía
 
-Para pruebas con datos ficticios, arrancar con `SENSACION_ACCEPT_REQUESTS=1`. Guarda solicitudes **pendientes**, nunca confirma automáticamente ni afirma tener disponibilidad. Datos fuera del directorio público: `/workspace/sensacion-data` en este entorno, configurable con `SENSACION_DATA_DIR`.
+36 propuestas de cocina boliviana: entrantes, platos tradicionales, asador, sopas, platos de la tierra y postres/bebidas. Filtros, búsqueda sin tildes, orden por precio/nombre, fichas en modal, galería, selección con cantidades y total. No se envía ningún pedido.
 
-Consulta restringida: `GET /api/reservations` con cabecera `Authorization: Bearer <SENSACION_ADMIN_TOKEN>`. Configurar el token en el entorno del servidor con al menos 24 caracteres; no escribirlo en Git, URL o chat. Sin token, acceso denegado. Panel administrativo en `/admin.html`: clave solo en memoria, consulta y cambio de estado. No se envían notificaciones. El restaurante debe llamar para confirmar. Antes de activar con clientes reales: completar privacidad, conservación/borrado, HTTPS, backups, operación y seguimiento de solicitudes; el servidor de desarrollo no es un despliegue de producción.
+**Platos, composición, precios en euros y disponibilidad son propuestas, no una carta comercial verificada.** Las recetas varían por región y casa; alérgenos y raciones deben confirmarse. `catalog.json` documenta los datos; la copia embebida de `dishes` en `app.js` permite que la web también funcione sin peticiones de datos. Mantener ambas sincronizadas al editar.
 
-## Fotografías
+Se intentó consultar `https://en.wikipedia.org/wiki/Bolivian_cuisine` como referencia general; la política de red denegó el acceso. También estaban bloqueados Maps y tacosmyguey.com. La selección se elaboró a partir de platos tradicionales conocidos, sin atribuir fuentes no consultadas ni afirmar que el restaurante los sirve.
 
-Las cuatro imágenes estaban visibles en el chat pero no disponibles como archivos locales. No se han sustituido por imágenes ajenas. La web carga automáticamente `images/pollo.jpg`, `images/plato.jpg` y `images/saltenas.jpg` cuando se incorporen los originales. `images/servicio.jpg` queda previsto para la cuarta fotografía de varios platos. Las tarjetas usan mientras tanto una ilustración explícita. No se han inferido rellenos, alérgenos ni recetas definitivas.
+Imágenes nuevas generadas con IA: portada panorámica y lámina de 36 ilustraciones fotográficas de platos, en el mismo estilo de luz cálida y fondo oscuro. Las tarjetas muestran celdas de esa lámina mediante CSS. Son representaciones artísticas, no fotografías de platos reales ni documentación exacta de recetas. Las fotos originales del chat no estaban disponibles como archivos locales; no se presentan estas imágenes como fotos del restaurante. Fuentes locales Bodoni Moda y DM Sans, licencias adjuntas.
 
-## Validación
+## Solicitudes de mesa
 
-`node --check asador-sensacion/app.js`. Comprobar en navegador filtros, búsqueda, suma y retirada de platos, validación de fecha, descarga y el estado pendiente. El servidor rechaza fechas pasadas, consentimiento ausente, origen ajeno y cuerpos grandes; evita duplicados de teléfono/fecha/hora. Todas las propuestas se editan en `app.js`.
+Python 3.12+, sin dependencias externas. Por defecto, el formulario **prepara una solicitud descargable sin enviarla** y muestra la llamada al 946 09 59 75. Una solicitud nunca equivale a una reserva confirmada.
+
+Registro compartido de prueba: arrancar con `SENSACION_ACCEPT_REQUESTS=1` y usar datos ficticios. SQLite fuera del directorio público, configurable con `SENSACION_DATA_DIR`; por defecto, `sensacion-data` junto a la raíz del repositorio. No se envían notificaciones.
+
+Panel `/admin.html`: configurar `SENSACION_ADMIN_TOKEN` de al menos 24 caracteres en el entorno del servidor, nunca en Git o URLs. Clave solo en memoria. Permite consultar solicitudes y marcar pendiente, confirmada, no disponible o cancelada. El restaurante debe comprobar disponibilidad y contactar directamente con el cliente; el cambio de estado no envía mensajes. Sin token, API administrativa denegada.
+
+Antes de activar con clientes reales: completar privacidad, responsable y contacto para derechos, conservación/borrado, HTTPS, copias persistentes y operación de solicitudes. El servidor incluido es de desarrollo. Datos facilitados por el usuario: Amaia Kalea, 2, 48940, Bizkaia; teléfono 946 09 59 75. Horarios no confirmados, teléfono usado exclusivamente para llamadas.
+
+## Pruebas
+
+Desde la raíz, con las dependencias del package-lock principal instaladas:
+
+```sh
+node asador-sensacion/tests/ui.cjs
+```
+
+Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); verifica carta, imágenes, filtros, orden, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.

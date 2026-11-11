@@ -57,7 +57,7 @@ class Handler(SimpleHTTPRequestHandler):
             return self.reply(404, {'error': 'Ruta inexistente'})
         if path.endswith('/'):
             path += 'index.html'
-        if Path(path).suffix.lower() not in {'.html', '.css', '.js', '.jpg', '.jpeg', '.webp', '.png', '.svg', '.woff2'}:
+        if Path(path).suffix.lower() not in {'.html', '.css', '.js', '.jpg', '.jpeg', '.webp', '.png', '.svg', '.woff2', '.ttf', '.json'}:
             return self.reply(404, {'error': 'Ruta inexistente'})
         super().do_GET()
 

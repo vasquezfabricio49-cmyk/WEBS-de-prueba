@@ -1,0 +1,15 @@
+{
+  "folders": [{"path": "asador-sensacion"}],
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [{
+      "label": "Asador Sensación: abrir web",
+      "type": "shell",
+      "command": "python3 server.py --host 0.0.0.0 --port 3003",
+      "options": {"cwd": "${workspaceFolder}"},
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {"reveal": "always", "panel": "dedicated"}
+    }]
+  }
+}
