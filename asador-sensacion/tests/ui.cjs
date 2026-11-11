@@ -57,6 +57,31 @@ const {chromium}=require('playwright');
    await page.locator('#sort').selectOption('default');const opener=page.getByRole('button',{name:'Ver detalle de Salteñas',exact:true});await opener.click();check(await page.locator('#dish-dialog').isVisible(),'detail dialog');
    await page.locator('#dialog-add').click();check(await page.locator('#cart-count').innerText()==='1','add via dialog');await page.keyboard.press('Escape');check(!await page.locator('#dish-dialog').isVisible(),'Escape closes');check(await opener.evaluate(el=>el===document.activeElement),'focus restored');
    await page.locator('#cart-toggle').click();check((await page.locator('#selection').innerText()).includes('3,50'),'total');await page.locator('#selection').getByRole('button',{name:'Añadir uno de Salteñas'}).click();check((await page.locator('#cart-total').innerText()).includes('7,00'),'quantity total');await page.locator('#clear-cart').click();check(await page.locator('#cart-count').innerText()==='0','clear');await page.locator('#cart-close').click();
+   check(await page.locator('body').evaluate(el=>!/[✳✦✱✴✻✽★☆]/u.test(el.textContent)),'no decorative asterisks');
+   const paymentRequests=[];const recordPaymentRequest=request=>{if(['POST','PUT','PATCH'].includes(request.method()))paymentRequests.push(request.url())};page.on('request',recordPaymentRequest);
+   for(const method of ['card','apple','google']){
+    await page.getByRole('button',{name:'Añadir Salteñas',exact:true}).click();await page.locator('#cart-toggle').click();await page.locator('#checkout-open').click();
+    check(await page.locator('#checkout-dialog').isVisible(),'checkout opens');check((await page.locator('#checkout-total').innerText()).includes('3,50'),'checkout amount');
+    check(await page.locator('#simulate-payment').isDisabled(),'consent required');
+    await page.locator('[data-payment='+method+']').click();
+    check(await page.locator('[data-payment='+method+']').getAttribute('aria-pressed')==='true','demo method: '+method);
+    if(method==='card'){
+     check(await page.locator('#demo-card input').evaluateAll(inputs=>inputs.every(input=>input.readOnly)),'no real card entry');
+     await page.locator('#checkout-close').click();check(await page.locator('#cart-count').innerText()==='1','cancel keeps cart');
+     await page.locator('#cart-toggle').click();await page.locator('#checkout-open').click();
+    }
+    await page.locator('#payment-consent').check();
+    if(method==='card'){
+     await page.locator('#simulate-decline').click();await page.waitForFunction(()=>document.querySelector('#payment-status').textContent.includes('rechazado'));
+     check(await page.locator('#cart-count').innerText()==='1','decline keeps cart');
+    }
+    await page.locator('#simulate-payment').click();await page.waitForFunction(()=>!document.querySelector('#payment-success').hidden);
+    check((await page.locator('#receipt-summary').innerText()).includes('DEMO-'),'demo receipt reference');
+    check(await page.locator('#cart-count').innerText()==='0','demo purchase clears cart');
+    check(await page.locator('#receipt-download').isVisible(),'demo receipt download');
+    await page.locator('#payment-done').click();check(!await page.locator('#checkout-dialog').isVisible(),'checkout closes after completion');
+   }
+   page.off('request',recordPaymentRequest);check(paymentRequests.length===0,'demo checkout sends no payment data');
    await page.locator('[name=name]').fill('Prueba ficticia');await page.locator('[name=phone]').fill('600000000');await page.locator('[name=date]').fill(new Date(Date.now()+86400000).toISOString().slice(0,10));await page.locator('[name=time]').fill('14:00');await page.locator('[name=consent]').check();await page.locator('button[type=submit]').click();check((await page.locator('#result').innerText()).includes('Todavía no se ha enviado'),'honest offline request');check(await page.locator('#download').isVisible(),'download');
    await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:'/tmp/sensacion-redesign-mobile.png'});
    if(reducedMotion==='reduce')check(await page.locator('.opening').evaluate(el=>getComputedStyle(el).display)==='none','reduced motion');

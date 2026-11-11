@@ -42,8 +42,14 @@ Desde la raíz, con las dependencias del package-lock principal instaladas:
 node asador-sensacion/tests/ui.cjs
 ```
 
-Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); 142 comprobaciones: verifica carta, disponibilidad de las 36 imágenes individuales, resolución, filtros, orden, cambio de platos de la portada, profundidad al mover el cursor, reinicio de la entrada, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.
+Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); 200 comprobaciones: verifica carta, disponibilidad de las 36 imágenes individuales, resolución, filtros, orden, cambio de platos de la portada, profundidad al mover el cursor, reinicio de la entrada, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.
 
 ## Identidad boliviana
 
 Paleta de rojo, amarillo y verde con tonos tierra y un patrón SVG original inspirado en los tejidos andinos (no una pieza artesanal ni una reproducción de un tejido específico). La apertura incorpora esa referencia textil. El recorrido por Altiplano, Valles y Oriente permite abrir fichas de platos asociados a cada región; las asociaciones no se presentan como orígenes exclusivos ni representan todas las cocinas del país. Las tres ilustraciones de paisaje son gráficas decorativas. Se mantienen las imágenes IA, los precios propuestos y las solicitudes pendientes de confirmación.
+
+## Compra ficticia
+
+Carrito con cantidades, total y checkout local en `checkout.js`. Métodos: tarjeta ficticia de solo lectura, Apple Pay simulado y Google Pay simulado; no se usa una pasarela, un SDK ni la API de carteras. Consentimiento explícito de demostración, estado de proceso, rechazo de prueba con reintento y justificante descargable DEMO. El total se calcula en céntimos. No se aceptan datos bancarios reales, no se transmiten datos de pago ni se crean pedidos para el restaurante. Cancelar o rechazar conserva el carrito; completar la simulación lo vacía. No requiere claves ni servicios externos. Los pagos reales quedan fuera de esta implementación.
+
+Identidad ampliada con una ilustración SVG original de paisaje y ciudad en ladera inspirada en Bolivia, tejidos más presentes y los nueve departamentos en la franja animada. Se eliminan los asteriscos decorativos.
