@@ -10,13 +10,13 @@ const {chromium}=require('playwright');
  const data=mkdtempSync(path.join(tmpdir(),'sensacion-ui-'));
  const port=await new Promise(resolve=>{const s=net.createServer();s.listen(0,'127.0.0.1',()=>{const p=s.address().port;s.close(()=>resolve(p))})});
  const server=spawn('python3',[path.join(root,'server.py'),'--port',String(port)],{env:{...process.env,SENSACION_DATA_DIR:data,SENSACION_ACCEPT_REQUESTS:'0'},stdio:'ignore'});
- let browser;const errors=[];let checks=0;const check=(value,message)=>{assert(value,message);checks++};
+ let browser;const errors=[];let checks=0;const check=(value,message)=>{assert(value,message);checks++;if(process.env.DEBUG_UI)console.log(message)};
  try{
   const base='http://127.0.0.1:'+port;
   let ready=false;for(let i=0;i<50;i++){try{ready=(await fetch(base+'/api/status')).ok}catch{}if(ready)break;await new Promise(r=>setTimeout(r,100))}check(ready,'server ready');
   browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
   for(const reducedMotion of ['reduce','no-preference']){
-   const page=await browser.newPage({reducedMotion});page.on('pageerror',e=>errors.push(e.message));
+   const page=await browser.newPage({reducedMotion});page.setDefaultTimeout(15000);page.on('pageerror',e=>errors.push(e.message));
    await page.goto(base);await page.waitForFunction(()=>document.querySelector('#products').children.length===36);await page.evaluate(()=>document.fonts.ready);
    check(await page.locator('.card').count()===36,'36 dishes');
    for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1000});check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'no overflow '+width);}
@@ -25,7 +25,7 @@ const {chromium}=require('playwright');
    check(await page.locator('.card img').evaluateAll(images=>new Set(images.map(img=>img.src)).size)===36,'36 distinct individual photos');
    const catalog=JSON.parse(require('node:fs').readFileSync(path.join(root,'catalog.json'),'utf8'));
    for(const dish of catalog)check((await page.request.get(base+'/'+dish.image)).ok(),'photo available: '+dish.name);
-   await page.locator('.card img').first().evaluate(image=>image.decode());
+   await page.locator('.card img').first().scrollIntoViewIfNeeded();await page.locator('.card img').first().evaluate(image=>image.decode());
    check(await page.locator('.card img').first().evaluate(image=>image.naturalWidth>=1024),'high resolution dish photos');
    check((await page.request.get(base+'/images/hero-pique.webp')).ok(),'transparent hero loads');
    check((await page.request.get(base+'/images/garnish.webp')).ok(),'foreground garnish loads');
@@ -34,7 +34,7 @@ const {chromium}=require('playwright');
    await page.locator('[data-hero=pollo-brasa]').click();await page.waitForFunction(()=>document.querySelector('[data-hero=pollo-brasa]').getAttribute('aria-pressed')==='true');
    check((await page.locator('#hero-dish').getAttribute('src')).includes('pollo-brasa.webp'),'hero third dish');
    await page.locator('[data-hero=pique-macho]').click();await page.waitForFunction(()=>document.querySelector('[data-hero=pique-macho]').getAttribute('aria-pressed')==='true');
-   const scene=await page.locator('#hero-scene').boundingBox();await page.mouse.move(scene.x+scene.width*.8,scene.y+scene.height*.45);
+   await page.locator('#hero-scene').scrollIntoViewIfNeeded();const scene=await page.locator('#hero-scene').boundingBox();await page.mouse.move(scene.x+scene.width*.8,scene.y+scene.height*.45);
    if(reducedMotion==='no-preference'){
     await page.waitForFunction(()=>document.querySelector('#food-stage').style.getPropertyValue('--ry')!=='');
     check(await page.locator('#food-stage').evaluate(el=>Math.abs(parseFloat(el.style.getPropertyValue('--ry')))>0),'pointer changes depth');
@@ -44,6 +44,12 @@ const {chromium}=require('playwright');
    await page.mouse.move(5,5);
    check(await page.locator('#food-stage').evaluate(el=>el.style.getPropertyValue('--ry')===''),'depth resets after pointer leaves');
 
+   for(const [region,name] of [['altiplano','Llauchas'],['valles','Silpancho'],['oriente','Cuñapé']]){
+    await page.locator('[data-region='+region+']').click();
+    check(await page.locator('[data-region='+region+']').getAttribute('aria-pressed')==='true','region selected: '+region);
+    await page.locator('#region-dishes').getByRole('button',{name:name+' ↗',exact:true}).click();
+    check(await page.locator('#dialog-name').textContent()===name,'regional dish detail: '+name);await page.keyboard.press('Escape');
+   }
    await page.getByRole('button',{name:'Al fuego',exact:true}).click();check(await page.locator('.card').count()===6,'category filter');
    await page.getByRole('button',{name:'Todo',exact:true}).click();await page.locator('#search').fill('quinua');check(await page.locator('.card').count()===2,'search');
    await page.locator('#search').fill('impossible-dish');check(await page.locator('#empty').isVisible(),'empty state');await page.locator('#reset').click();check(await page.locator('.card').count()===36,'reset');

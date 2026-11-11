@@ -1,6 +1,6 @@
 # Asador Sensación · Bolivia en cada bocado
 
-Web independiente con crema, rojo y lima, tipografía contundente y una escena gastronómica interactiva en la apertura. La portada anterior basada en la captura oscura se ha sustituido. La referencia solicitada es tacosmyguey.com, pero su acceso sigue denegado por la política de red; no se afirma que esta versión sea una reproducción verificada de esa web. Se han guardado los dominios tacosmyguey.com y www.tacosmyguey.com en el borrador del entorno, pendientes de que el usuario guarde y aplique el acceso.
+Web independiente con rojo, amarillo, verde y tonos tierra, referencias textiles andinas, tipografía contundente y una escena gastronómica interactiva en la apertura. La portada anterior basada en la captura oscura se ha sustituido. La referencia solicitada es tacosmyguey.com, pero su acceso sigue denegado por la política de red; no se afirma que esta versión sea una reproducción verificada de esa web. Se han guardado los dominios tacosmyguey.com y www.tacosmyguey.com en el borrador del entorno, pendientes de que el usuario guarde y aplique el acceso.
 
 ## Abrir con Copilot / Codespaces
 
@@ -42,4 +42,8 @@ Desde la raíz, con las dependencias del package-lock principal instaladas:
 node asador-sensacion/tests/ui.cjs
 ```
 
-Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); 130 comprobaciones: verifica carta, disponibilidad de las 36 imágenes individuales, resolución, filtros, orden, cambio de platos de la portada, profundidad al mover el cursor, reinicio de la entrada, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.
+Playwright y Chromium (`CHROMIUM_PATH` o `/usr/bin/chromium`); 142 comprobaciones: verifica carta, disponibilidad de las 36 imágenes individuales, resolución, filtros, orden, cambio de platos de la portada, profundidad al mover el cursor, reinicio de la entrada, diálogos, foco, selección, solicitud sin envío, anchos 320/390/768/1440 y movimiento reducido. Servidor y datos temporales aislados. Capturas de comprobación en `/tmp/sensacion-redesign-desktop.png` y `/tmp/sensacion-redesign-mobile.png`.
+
+## Identidad boliviana
+
+Paleta de rojo, amarillo y verde con tonos tierra y un patrón SVG original inspirado en los tejidos andinos (no una pieza artesanal ni una reproducción de un tejido específico). La apertura incorpora esa referencia textil. El recorrido por Altiplano, Valles y Oriente permite abrir fichas de platos asociados a cada región; las asociaciones no se presentan como orígenes exclusivos ni representan todas las cocinas del país. Las tres ilustraciones de paisaje son gráficas decorativas. Se mantienen las imágenes IA, los precios propuestos y las solicitudes pendientes de confirmación.
