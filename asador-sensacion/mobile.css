@@ -1,0 +1,112 @@
+/* Touch layouts retain the editorial composition with readable type. */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 90px; }
+  body { font-size: 16px; }
+  header { height: 78px; padding-inline: 5%; gap: 8px; }
+  .brand { font-size: 18px; gap: 8px; }
+  .brand small { font-size: 8px; letter-spacing: 1px; }
+  .brand-icon { flex: none; }
+  nav .outline { min-height: 44px; font-size: 12px; padding: 10px 12px; gap: 8px; }
+  .notice { font-size: 9px; letter-spacing: 1px; line-height: 1.6; }
+  .eyebrow, .hero-copy .eyebrow { font-size: 10px; letter-spacing: 1.2px; }
+  .hero-copy { padding-top: 32px; }
+  .hero h1 { font-size: clamp(53px, 14.8vw, 84px); letter-spacing: -.045em; }
+  .hero-copy>p:not(.eyebrow), .country-copy>p:not(.eyebrow), .intro-grid>div>p:not(.lead),
+  .section-head>p, .region-copy>p:not(.eyebrow), .booking>div>p:not(.eyebrow) { font-size: 15px; line-height: 1.8; }
+  .hero .actions { flex-wrap: wrap; gap: 8px 20px; }
+  .button, .outline, .hero .button, .hero .text-link, .text-link { font-size: 12px; min-height: 48px; }
+  .hero-scene { height: 440px; padding-bottom: 130px; }
+  .food-stage { width: 100%; left: 0; height: 310px; }
+  .dish-float { inset: 0; }
+  .floating-label { font-size: 18px; }
+  .scene-caption { bottom: 112px; font-size: 12px; letter-spacing: 1px; }
+  .scene-caption small { font-size: 10px; line-height: 1.5; max-width: 130px; }
+  .scene-controls { bottom: 52px; }
+  .scene-controls button { min-height: 48px; font-size: 11px; gap: 6px; }
+  .scene-controls button>span { font-size: 12px; }
+  .replay { bottom: 3px; min-height: 44px; font-size: 11px; }
+  .hero-bottom { font-size: 10px; letter-spacing: .5px; padding-block: 20px; }
+  .hero-bottom a { max-width: 170px; }
+  .hero-bottom>span { max-width: 130px; }
+  .marquee { font-size: 12px; }
+  .section, .country-copy { padding-inline: 6%; }
+  .country-copy h2, .section-head h2 { font-size: clamp(39px, 10vw, 54px); }
+  .intro h2 { font-size: clamp(37px, 9.5vw, 50px); }
+  .facts>span { font-size: 12px; }
+  .facts .facts-note { font-size: 12px!important; }
+  .region-tabs { flex-wrap: wrap; }
+  .region-tabs button { min-height: 48px; font-size: 12px; padding: 10px; }
+  .region-copy #region-dishes button { min-height: 44px; font-size: 12px; }
+  .region-copy { padding: 28px 20px; }
+  .tools { top: 78px; }
+  .tools #filters button { flex: none; min-height: 44px; font-size: 12px; padding: 10px 16px; }
+  .search-label input, .booking form input, .booking form select, .checkout-payment input { font-size: 16px; min-height: 48px; }
+  .catalog-meta { align-items: start; flex-wrap: wrap; font-size: 12px; gap: 8px; }
+  .catalog-meta select { font-size: 13px; max-width: 180px; min-height: 44px; }
+  .catalog .section-head small, .gallery .section-head small { font-size: 12px; }
+  .grid { gap: 24px 16px; }
+  .card { display: flex; flex-direction: column; }
+  .card-body { flex: 1; display: flex; flex-direction: column; padding-top: 16px; }
+  .card h3 { font-size: 25px; line-height: 1.2; hyphens: auto; }
+  .card h3 button { min-height: 44px; }
+  .card .eyebrow { font-size: 9px; letter-spacing: .6px; }
+  .card-description { font-size: 13px; line-height: 1.7; min-height: 0; }
+  .price-row { margin-top: auto; flex-wrap: wrap; }
+  .price-row strong { font-size: 17px; }
+  .price-row small { font-size: 10px; }
+  .add-button { width: 44px; height: 44px; }
+  .dish-tag { font-size: 9px; max-width: calc(100% - 16px); }
+  .detail-icon { width: 32px; height: 32px; }
+  .fine, .catalog .fine, footer p, footer>a:last-child { font-size: 12px; }
+  .gallery-item>span:last-child { font-size: 12px; }
+  .booking h2, .visit h2 { font-size: clamp(46px, 13vw, 66px); }
+  .booking form label, .checkout-payment label { font-size: 14px; }
+  .booking form .pair { display: block; }
+  .booking form #booking-mode { font-size: 13px; }
+  .booking form .consent, .checkout-payment .consent { font-size: 13px; line-height: 1.7; }
+  .consent input { min-height: 24px!important; width: 24px; height: 24px; margin-top: 0; }
+  .booking form .button { font-size: 12px; }
+  .booking-contact>span { font-size: 13px; }
+  #cart-toggle { font-size: 13px; min-height: 58px; bottom: max(12px, env(safe-area-inset-bottom)); }
+  #cart-toggle strong { font-size: 15px; }
+  #cart-toggle b { font-size: 12px; }
+  #cart-panel { bottom: calc(84px + env(safe-area-inset-bottom)); max-height: calc(100dvh - 110px); padding: 20px; }
+  #selection>div>span { font-size: 14px; }
+  #selection button, .cart-head button, .dialog-close { min-width: 44px; min-height: 44px; }
+  #selection button { background: #e4ddcc; color: #293421; border-color: #6c7759; }
+  #selection .quantity-controls { gap: 8px; }
+  #cart-panel .button, #cart-panel .outline, #cart-panel>#cart-book { font-size: 13px; min-height: 44px; }
+  dialog { max-height: calc(100dvh - 24px); overscroll-behavior: contain; }
+  .dialog-copy { padding: 24px; }
+  .dialog-copy>p:not(.eyebrow), .dialog-copy .fine { font-size: 14px; }
+  .dialog-copy .price-row { gap: 16px; }
+  .dialog-copy .button { width: 100%; font-size: 13px; }
+  .checkout-summary>p:not(.eyebrow), #checkout-items p, .checkout-payment .fine, .checkout-payment #demo-wallet p { font-size: 13px; }
+  .payment-methods { gap: 6px; }
+  .payment-methods button { font-size: 12px; min-height: 52px; }
+  .payment-methods button small { font-size: 10px; }
+  .checkout-payment #simulate-payment { font-size: 13px; }
+  .payment-decline { font-size: 12px; min-height: 44px; }
+  footer { padding-bottom: calc(112px + env(safe-area-inset-bottom)); }
+  #toast { font-size: 13px; }
+}
+@media (max-width: 359px) {
+  .brand { font-size: 16px; }
+  .brand-icon { display: none; }
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  .card-image .dish-photo { aspect-ratio: 1.2; }
+  .hero-scene { height: 405px; }
+  .food-stage { height: 275px; }
+  .scene-controls button { gap: 3px; }
+  .scene-controls button>span { font-size: 11px; }
+  .gallery-item { grid-template-columns: 40% 1fr; }
+  .gallery-item b { font-size: 22px; }
+  footer { grid-template-columns: 1fr; }
+  footer>a:last-child { grid-column: 1; grid-row: auto; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .hero-copy>p:not(.eyebrow), .country-copy>p:not(.eyebrow), .intro-grid>div>p:not(.lead), .section-head>p { font-size: 14px; }
+  .card-description { font-size: 13px; }
+  .booking { grid-template-columns: 1fr; }
+  .booking form input, .booking form select { font-size: 16px; }
+}

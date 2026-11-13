@@ -13,6 +13,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
+from threading import Lock
 
 ROOT = Path(__file__).resolve().parent
 DATA = Path(os.environ.get('SENSACION_DATA_DIR', str(ROOT.parent.parent / 'sensacion-data'))).resolve()
@@ -22,11 +23,17 @@ DATA.mkdir(parents=True, exist_ok=True, mode=0o700)
 DB = DATA / 'requests.sqlite3'
 TOKEN = os.environ.get('SENSACION_ADMIN_TOKEN', '')
 ENABLED = os.environ.get('SENSACION_ACCEPT_REQUESTS') == '1'
+SITE_FILE = DATA / 'site-editor.json'
+SITE_LOCK = Lock()
 with sqlite3.connect(DB) as db:
     db.execute('CREATE TABLE IF NOT EXISTS requests (reference TEXT PRIMARY KEY, name TEXT, phone TEXT, day TEXT, time TEXT, people INTEGER, status TEXT, created TEXT)')
 os.chmod(DB, 0o600)
 
 class Handler(SimpleHTTPRequestHandler):
+    def local_editor(self):
+        return (self.client_address[0] in ('127.0.0.1', '::1')
+                and urlsplit('http://' + self.headers.get('Host', '')).hostname in ('127.0.0.1', 'localhost')
+                and self.headers.get('X-Sensacion-Editor') == '1')
     def log_message(self, *_):
         pass  # Evitar datos personales y claves en logs.
 
@@ -42,11 +49,18 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         path = urlsplit(self.path).path
+        if path == '/api/site':
+            with SITE_LOCK:
+                try:
+                    site = json.loads(SITE_FILE.read_text(encoding='utf-8'))
+                except (FileNotFoundError, ValueError):
+                    site = {'version': 1, 'menu': json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8')), 'content': {}}
+            return self.reply(200, site)
         if path == '/api/status':
             return self.reply(200, {'reservations': ENABLED})
         if path == '/api/reservations':
             supplied = self.headers.get('Authorization', '')
-            if len(TOKEN) < 24 or not hmac.compare_digest(supplied, 'Bearer ' + TOKEN):
+            if not self.local_editor() and (len(TOKEN) < 24 or not hmac.compare_digest(supplied, 'Bearer ' + TOKEN)):
                 return self.reply(401, {'error': 'Acceso restringido'})
             with sqlite3.connect(DB) as db:
                 db.row_factory = sqlite3.Row
@@ -61,11 +75,50 @@ class Handler(SimpleHTTPRequestHandler):
             return self.reply(404, {'error': 'Ruta inexistente'})
         super().do_GET()
 
+    def do_PUT(self):
+        if urlsplit(self.path).path != '/api/site':
+            return self.reply(404, {'error': 'Ruta inexistente'})
+        # This presentation editor is intentionally confined to this computer.
+        origin = urlsplit(self.headers.get('Origin', ''))
+        host = self.headers.get('Host', '')
+        if self.client_address[0] not in ('127.0.0.1', '::1') or origin.netloc != host or origin.hostname not in ('127.0.0.1', 'localhost') or self.headers.get('X-Sensacion-Editor') != '1':
+            return self.reply(403, {'error': 'La edición solo está disponible desde la vista previa local'})
+        try:
+            size = int(self.headers.get('Content-Length', '0'))
+            if not 0 < size <= 5 * 1024 * 1024:
+                raise ValueError()
+            site = json.loads(self.rfile.read(size))
+            menu, content = site['menu'], site.get('content', {})
+            if site.get('version') != 1 or not isinstance(menu, list) or len(menu) > 200 or not isinstance(content, dict):
+                raise ValueError()
+            ids = set()
+            for dish in menu:
+                if not re.fullmatch(r'[-a-zA-Z0-9]{1,100}', dish['id']) or dish['id'] in ids:
+                    raise ValueError()
+                ids.add(dish['id'])
+                for field, limit in [('name', 100), ('description', 1000), ('category', 80)]:
+                    if not isinstance(dish[field], str) or not 0 < len(dish[field]) <= limit:
+                        raise ValueError()
+                if isinstance(dish['price'], bool) or not isinstance(dish['price'], (int, float)) or not 0 <= dish['price'] <= 10000:
+                    raise ValueError()
+                if not isinstance(dish['image'], str) or not re.match(r'^(images/[-a-zA-Z0-9_.]+\.(?:webp|png|jpe?g|svg)$|data:image/(?:jpeg|png|webp);base64,[a-zA-Z0-9+/=]+$|https://[^\s"<>]+$)', dish['image']):
+                    raise ValueError()
+            if any(not isinstance(k, str) or not isinstance(v, str) or len(k) > 80 or len(v) > 2 * 1024 * 1024 for k, v in content.items()):
+                raise ValueError()
+            public = {'version': 1, 'menu': menu, 'content': content}
+            with SITE_LOCK:
+                temp = SITE_FILE.with_suffix('.tmp')
+                temp.write_text(json.dumps(public, ensure_ascii=False, allow_nan=False), encoding='utf-8')
+                temp.replace(SITE_FILE)
+            return self.reply(200, {'saved': True})
+        except (ValueError, TypeError, KeyError, OSError):
+            return self.reply(400, {'error': 'Los datos no se pudieron guardar. Revisa los campos y las fotografías.'})
+
     def do_PATCH(self):
         match = re.fullmatch(r'/api/reservations/(SEN-[A-F0-9]{10})', self.path)
         if not match:
             return self.reply(404, {'error': 'Ruta inexistente'})
-        if len(TOKEN) < 24 or not hmac.compare_digest(self.headers.get('Authorization', ''), 'Bearer ' + TOKEN):
+        if not self.local_editor() and (len(TOKEN) < 24 or not hmac.compare_digest(self.headers.get('Authorization', ''), 'Bearer ' + TOKEN)):
             return self.reply(401, {'error': 'Acceso restringido'})
         if urlsplit(self.headers.get('Origin', '')).netloc != self.headers.get('Host'):
             return self.reply(403, {'error': 'Origen no permitido'})

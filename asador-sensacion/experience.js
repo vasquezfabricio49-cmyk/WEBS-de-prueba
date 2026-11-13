@@ -7,7 +7,7 @@
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   const controls = [...document.querySelectorAll('[data-hero]')];
   const heroDishes = {
-    'pique-macho': {src: 'images/hero-pique.webp', label: 'PIQUE MACHO', alt: 'Ilustración con IA de un pique macho boliviano', flat: false},
+    'pique-macho': {src: 'images/pique-film-poster.png', label: 'PIQUE MACHO', alt: 'Ilustración con IA de un pique macho boliviano', flat: false},
     saltenas: {src: 'images/saltenas.webp', label: 'SALTEÑAS', alt: 'Ilustración con IA de salteñas bolivianas', flat: true},
     'pollo-brasa': {src: 'images/pollo-brasa.webp', label: 'POLLO A LA BRASA', alt: 'Ilustración con IA de pollo a la brasa boliviano', flat: true}
   };

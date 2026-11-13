@@ -128,7 +128,7 @@
   {
     "id": "plato-15",
     "name": "Pollo a la brasa",
-    "description": "Pollo asado con arroz, patatas y fideos. Inspirado en tus fotos.",
+    "description": "Pollo asado con arroz, patatas y fideos.",
     "price": 13.5,
     "category": "Al fuego",
     "featured": true,
