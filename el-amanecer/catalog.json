@@ -1,0 +1,134 @@
+[
+  {
+    "id": "amanecer-pique-macho",
+    "name": "Pique de la casa",
+    "category": "Tradición",
+    "description": "Carne, patatas, salchicha, huevo y verduras, con la presentación de El Amanecer.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": true,
+    "active": true,
+    "image": "images/pique-macho.webp"
+  },
+  {
+    "id": "amanecer-lechon-horno",
+    "name": "Lechón al horno",
+    "category": "Al horno",
+    "description": "Cerdo dorado con arroz y sus acompañamientos de la casa.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": true,
+    "active": true,
+    "image": "images/lechon-horno.webp"
+  },
+  {
+    "id": "amanecer-picante-mixto",
+    "name": "Picante mixto",
+    "category": "Tradición",
+    "description": "Un plato generoso en salsa, servido con arroz y guarnición.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": true,
+    "active": true,
+    "image": "images/picante-mixto.webp"
+  },
+  {
+    "id": "amanecer-pollo-habas",
+    "name": "Pollo con habas y fideos",
+    "category": "De cuchara",
+    "description": "Pollo, habas y fideos, con caldo para acompañar.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": false,
+    "active": true,
+    "image": "images/pollo-habas.webp"
+  },
+  {
+    "id": "amanecer-caldo-pollo",
+    "name": "Caldo de pollo",
+    "category": "De cuchara",
+    "description": "Caldo de la casa con pollo, huevo, patata y cebollín.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": false,
+    "active": true,
+    "image": "images/caldo-pollo.webp"
+  },
+  {
+    "id": "amanecer-kjaras",
+    "name": "K’jaras",
+    "category": "Tradición",
+    "description": "Mote, patata y una combinación de sabores bolivianos para compartir.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": true,
+    "active": true,
+    "image": "images/kjaras.webp"
+  },
+  {
+    "id": "amanecer-tripitas",
+    "name": "Tripitas",
+    "category": "Tradición",
+    "description": "Tripitas doradas, acompañadas de mote.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": true,
+    "active": true,
+    "image": "images/tripitas.webp"
+  },
+  {
+    "id": "amanecer-silpancho",
+    "name": "Silpancho",
+    "category": "Tradición",
+    "description": "Carne fina con arroz, huevo frito y tomate con cebolla.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": true,
+    "active": true,
+    "image": "images/silpancho.webp"
+  },
+  {
+    "id": "amanecer-huminta-horno",
+    "name": "Humintas al horno",
+    "category": "Panadería",
+    "description": "Maíz y queso, con el dorado de la preparación artesanal.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": false,
+    "active": true,
+    "image": "images/huminta-horno.webp"
+  },
+  {
+    "id": "amanecer-pasteles",
+    "name": "Pasteles de la casa",
+    "category": "Panadería",
+    "description": "Masa dorada en media luna. Consulta los rellenos disponibles.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": false,
+    "active": true,
+    "image": "images/pasteles.webp"
+  },
+  {
+    "id": "amanecer-rollitos-queso",
+    "name": "Rollitos de queso",
+    "category": "Panadería",
+    "description": "Rollitos horneados con queso dorado en la superficie.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": false,
+    "active": true,
+    "image": "images/rollitos-queso.webp"
+  },
+  {
+    "id": "amanecer-pan-queso",
+    "name": "Pan de queso",
+    "category": "Panadería",
+    "description": "Panecillos de la casa con queso. Consulta la elaboración disponible.",
+    "price": null,
+    "priceLabel": "Consultar",
+    "featured": false,
+    "active": true,
+    "image": "images/pan-queso.webp"
+  }
+]
