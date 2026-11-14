@@ -1,8 +1,8 @@
 /* GitHub Pages demo: settings and requests stay in this browser. */
 (()=>{
- const key='amanecer-editor-v1',bookingKey='amanecer-reservations-v1';
+ const key='amanecer-editor-carta20261114',bookingKey='amanecer-reservations-v1';
  const image=value=>typeof value==='string'&&(/^(images\/[a-z0-9_.-]+\.(webp|png|jpe?g|svg))$/i.test(value)||/^data:image\/(jpeg|png|webp);base64,[a-z0-9+/=]+$/i.test(value)||/^https:\/\/[^\s"<>]+$/i.test(value));
- const valid=data=>data&&data.version===1&&Array.isArray(data.menu)&&data.menu.length<=200&&data.menu.every(d=>d&&typeof d.id==='string'&&/^[-a-z0-9]{1,100}$/i.test(d.id)&&typeof d.name==='string'&&d.name.trim().length>0&&d.name.length<=100&&typeof d.description==='string'&&d.description.trim().length>0&&d.description.length<=1000&&typeof d.category==='string'&&d.category.trim().length>0&&d.category.length<=80&&(d.price===null||(Number.isFinite(d.price)&&d.price>=0&&d.price<=10000))&&image(d.image))&&new Set(data.menu.map(d=>d.id)).size===data.menu.length;
+ const valid=data=>data&&data.version===1&&Array.isArray(data.menu)&&data.menu.length<=200&&data.menu.every(d=>d&&typeof d.id==='string'&&/^[-a-z0-9]{1,100}$/i.test(d.id)&&typeof d.name==='string'&&d.name.trim().length>0&&d.name.length<=100&&typeof d.description==='string'&&d.description.trim().length>0&&d.description.length<=1000&&typeof d.category==='string'&&d.category.trim().length>0&&d.category.length<=80&&(d.price===null||(Number.isFinite(d.price)&&d.price>=0&&d.price<=10000))&&image(d.image)&&(!d.image4k||image(d.image4k)))&&new Set(data.menu.map(d=>d.id)).size===data.menu.length;
  const fields=[
   ['notice','Aviso superior','.notice'],['hero-title','Título de portada','#hero-title'],['hero-copy','Texto de portada','.hero-copy>p:not(.eyebrow)'],
   ['country-title','Título de raíces','#country-title'],['country-copy-1','Raíces: primer párrafo','.country-copy>p:not(.eyebrow)'],['country-copy-2','Raíces: segundo párrafo','.country-copy>p:not(.eyebrow):last-of-type'],

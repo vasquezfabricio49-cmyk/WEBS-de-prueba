@@ -1,0 +1,266 @@
+{
+  "references": [
+    [
+      "Chairo, receta boliviana",
+      "https://www.recetas.com.bo/content/chairo"
+    ],
+    [
+      "Anticuchos de corazón y papa",
+      "https://www.recetas.com.bo/content/anticucho"
+    ],
+    [
+      "Picante de pollo",
+      "https://www.reduno.com.bo/programa/picante-de-pollo-2022920105652"
+    ],
+    [
+      "Pollo broaster",
+      "https://www.reduno.com.bo/nota/2018-11-22-21-0-0-pollo-a-la-broaster"
+    ],
+    [
+      "Charquekán",
+      "https://www.recetas.com.bo/content/charquek%C3%A1n"
+    ],
+    [
+      "Fideos uchu: documentación del Museo Nacional de Etnografía y Folklore",
+      "https://www.musef.gob.bo/pdf/catalogos/menores/2025_El_uchu_en_padilla.pdf"
+    ],
+    [
+      "Keperí al horno",
+      "https://www.reduno.com.bo/programa/keperi-al-horno-202139133222"
+    ],
+    [
+      "Chicha de maní",
+      "https://www.reduno.com.bo/nota/2018-8-9-0-0-0-chicha-de-mani"
+    ]
+  ],
+  "assets": [
+    {
+      "slug": "aji-lengua",
+      "output": "exec-5510ca73-a0a0-4bde-adfe-887e660a9e48.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Ají de lengua. Faithful culinary content: authentic Bolivian aji de lengua, neatly sliced cooked beef tongue in rich reddish brown aji sauce, white rice, boiled potato and peas, white square plate. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "anticuchos",
+      "output": "exec-42b6b3bf-e861-4f62-b2c8-0d5b1756feec.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Anticuchos. Faithful culinary content: authentic Bolivian anticuchos, three wooden skewers of thin grilled beef heart slices with gentle char marks, boiled potatoes and a modest drizzle of pale yellow peanut aji sauce, white square plate, no vegetable shish kebabs. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "caldo-cardan",
+      "output": "exec-87b8bb7d-f06b-4f59-b0e5-8189da12aa93.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Caldo de cardán. Faithful culinary content: authentic Bolivian caldo de cardán, appetizing sliced cooked beef offal and tendon pieces with potato, boiled egg and chopped green onion in rich clear golden broth in a white bowl, tasteful food photography, no anatomical display. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "cerdo-ensalada",
+      "output": "exec-1e6f2a31-6ab7-4ec9-85ab-351267c0b098.png",
+      "prompt": "Isolate ONLY the foreground single white square plate containing browned pork, compact white rice mound, creamy Russian salad on lettuce and tomato. Preserve that exact plate shape, camera angle, pork shape, quantities, and arrangement. Remove other plates and kitchen beyond the chosen foreground plate. Extend to landscape16:9 dark charcoal warm brown #171411 background, as a faithful restaurant photo with only gentle lighting/white balance/noise cleanup. No new ingredients or replating. Photorealistic preservation edit. Requested high resolution 4K3840x2160 landscape16:9 framing retaining all essential source content. No stylized CGI or oversharpened plastic effects. Edit target is the attached photograph.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "chairo",
+      "output": "exec-1c31acf5-1ed0-4d83-af79-9d98e0302215.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Sopa de chairo. Faithful culinary content: authentic Bolivian chairo soup, finely broken dark chuño, small lamb pieces, wheat and hominy, finely diced carrot and potato, green peas and herbs in substantial brown golden broth, white bowl. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "charque",
+      "output": "exec-a5505b1d-a18e-4ae6-a960-bb15e0446a3b.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Charque. Faithful culinary content: authentic Bolivian charque charquekan, crisp shredded dried beef fibers over large white mote, boiled potato, sliced hard boiled egg and fresh white cheese, white square plate, not a steak. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "chicha-mani",
+      "output": "exec-c5ed0e7b-98ca-4874-a2f0-d554e7b0e7f0.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Chicha de maní. Faithful culinary content: a simple clear tall glass of traditional Bolivian chicha de mani, creamy beige peanut beverage, gentle natural opaque texture with light foam, a few peanuts beside glass, no cocktail garnish. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "chicharron-mixto",
+      "output": "exec-aeed135b-3d8d-4743-87a2-329b056534c4.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Chicharrón mixto. Faithful culinary content: representative Bolivian mixed chicharron platter, distinct golden fried pork chunks and chicken pieces with large white mote corn and whole potatoes, white square plate, no seafood, composition illustrative not a certified restaurant recipe. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "chicharron",
+      "output": "exec-a7d1c297-403c-4949-b6f3-870468b71add.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Chicharrón. Faithful culinary content: authentic Cochabamba Bolivian pork chicharron, golden fried pork chunks with crisp skin and juicy fibers, large white mote corn and whole boiled potatoes, small llajua bowl beside it, white square plate, no Mexican tortilla or pork rind snack only. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "ensalada-mixta",
+      "output": "exec-663e80dd-5fe6-40df-8643-6003fc6865ad.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Ensalada mixta. Faithful culinary content: simple fresh restaurant mixed salad with green lettuce, red tomato wedges, thin onion rings, grated carrot and cucumber in a white square plate, authentic unfussy portions. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "eventos-boda",
+      "output": "exec-c20806f9-cfaa-4607-bf84-f09c7ca1a8a9.png",
+      "prompt": "Faithfully restore this exact restaurant wedding room photograph: preserve architecture, original furniture positions and number, pink and white chair covers, exact floral decorations, the existing Nuestra Boda text and empty room. Only improve gentle light balance, lens clarity, compression noise and realistic fine detail. No new architecture, no new people, no fabricated luxurious venue or decorations. Photorealistic preservation edit. Requested high resolution 4K3840x2160 landscape16:9 framing retaining all essential source content. No stylized CGI or oversharpened plastic effects. Edit target is the attached photograph.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "eventos-celebracion",
+      "output": "exec-2e36b93c-d68d-4fc2-bfde-fb34524e9b6f.png",
+      "prompt": "Faithfully restore this exact restaurant celebration room photograph: preserve architecture, every existing chair, blue white covers, turquoise table runner, flowers and silver centerpiece, table positions. Only improve natural clarity, gentle white balance, noise and photographic quality, no new objects, no fake venue, no invented architecture. Photorealistic preservation edit. Requested high resolution 4K3840x2160 landscape16:9 framing retaining all essential source content. No stylized CGI or oversharpened plastic effects. Edit target is the attached photograph.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "eventos-cumple",
+      "output": "WhatsApp Image 2026-11-13 at 20.09.51.jpeg",
+      "restoration": "Original preserved; automatic image restoration was rejected by the provider. Format-only4K export.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "falso-conejo",
+      "output": "exec-b4b6637e-fc84-4a73-b06d-3377f0716297.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Falso conejo. Faithful culinary content: authentic Bolivian falso conejo made of thin pounded breaded BEEF cutlet in brick red aji sauce, white rice and boiled potato with peas, white square plate, absolutely no rabbit meat. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "fideos-uchu",
+      "output": "exec-e50f9d11-f18c-4181-bbbc-c34f9194fffd.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Fideos uchu. Faithful culinary content: authentic Cochabamba Bolivian fideos uchu, short tubular pasta in rich reddish aji broth with beef pieces, potato chunks, green broad beans and parsley, thick soupy consistency in white deep bowl. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "filete-ternera",
+      "output": "exec-ba716cdf-7984-401e-a72e-e723ac068a24.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Filete de ternera. Faithful culinary content: simple cooked beef steak with natural seared surface, golden thick cut fries, white rice and a little lettuce and tomato salad, white square plate, no raw meat. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "fricase",
+      "output": "exec-55ac80f9-9748-4c62-8bb2-8b4eef2bbdc9.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Fricasé. Faithful culinary content: authentic Bolivian pork fricasé, tender pork with bone in a golden yellow aji broth, large white hominy kernels and dark chuño potatoes, white deep bowl, not a French cream fricassee. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "kawi",
+      "output": "exec-55d5020b-08a5-4ede-bed3-eedc03536dde.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Kawi. Faithful culinary content: traditional Cochabamba kawi broth with substantial cooked beef brisket rib portion, peeled potato, carrot and parsley, clear golden stock, white soup bowl. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "keperi",
+      "output": "exec-e10eba81-20e3-477a-aef7-e22970987104.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Keperí. Faithful culinary content: authentic Bolivian keperi al horno, thick oven roasted beef brisket with natural juices and browned crust, creamy rice with cheese and a simple tomato onion salad on a white square plate. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "limonada",
+      "output": "exec-2cc7f5f5-80d8-4c69-8924-e1ed5f7331c5.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Limonada. Faithful culinary content: a simple clear tall glass of freshly squeezed pale yellow cloudy lemonade with a little ice, condensation and one small lemon slice on the side, no mint leaves or cocktail style, no alcohol. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "linaza",
+      "output": "exec-1abebf39-826a-44cb-9438-8b7e9aef032f.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Linaza. Faithful culinary content: a simple clear tall glass of Bolivian linaza flaxseed drink, translucent amber brown liquid with a few natural suspended flax particles, small condensation droplets, a few flax seeds beside glass, no cocktail garnish. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "milanesa",
+      "output": "exec-a2d12da9-f663-4a3a-bc6d-795cc41107ef.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Milanesa de carne o pollo. Faithful culinary content: one appetizing large thin golden breaded milanesa cutlet, with a small clean cut revealing cooked meat, thick fries and white rice with lettuce and tomato, white square plate, represent a traditional meat or chicken milanesa without labeling meat in image. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "mocochinchi",
+      "output": "exec-9d1c2128-f15e-4bab-959d-8a688f730ec3.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Mocochinchi. Faithful culinary content: a clear simple tall glass of amber Bolivian mocochinchi with a whole rehydrated dried peach visible at bottom and small natural condensation, no cocktail garnishes, no alcohol. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "papaliza",
+      "output": "exec-dc0cd280-9dfa-401f-a3ea-60863a41d0f3.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Papaliza. Faithful culinary content: Bolivian aji de papaliza, small diced yellow and pink ulluco tubers in red aji stew with green peas, served beside steamed white rice in a white square plate, not ordinary large potato chunks. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "pato",
+      "output": "exec-7cabd039-dd03-4949-9039-e27db2474ffc.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Pato. Faithful culinary content: Bolivian restaurant roasted duck portion with naturally browned skin, white rice, boiled potato and modest fresh tomato onion salad, white square plate, no French orange sauce styling. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "picante-pollo",
+      "output": "exec-6ba76697-4fed-47c4-a46f-8bdf1c90c7be.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Picante de pollo. Faithful culinary content: authentic Bolivian picante de pollo, one chicken thigh and drumstick in rich brick red aji colorado sauce, white rice, boiled potato, small fresh tomato and onion salad, white square plate. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "pique-cutout",
+      "output": "exec-17853e09-4dd3-4993-8f41-8bfd3399fee2.png",
+      "prompt": "Edit this exact photograph only by removing all background outside the brown oval serving platter. Preserve the original platter outline, angle, every ingredient, quantities, arrangement, texture and natural food appearance exactly. Do not rotate or replate or rebuild any food. No added lemon, no chili, no ingredient changes. Output a clean precise genuinely transparent-background cutout including the ENTIRE oval platter with food, centered on a large square transparent canvas, ample transparent margin for a slow rotation on a website. High resolution, extremely clean edge, no fake drop shadow, no colored matte, no text. The attached image is the edit target.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "pollo-broaster",
+      "output": "exec-77c1f3df-047d-4b4f-882e-2008220f7831.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Pollo broaster. Faithful culinary content: Bolivian style fried chicken broaster, two bone-in chicken pieces with natural crispy golden coating, thick French fries and white rice, a little lettuce and tomato, white square plate. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "poster-ambiente",
+      "output": "exec-3bea4446-8b12-43eb-ab34-1705c91af2c3.png",
+      "prompt": "Faithfully restore this exact video frame for use as a sharp poster of the SAME real video. Preserve every person's identity, pose, face, age, clothing and expression, preserve exact architecture and all objects and framing. Do NOT invent faces, replace people, beautify bodies, add food or change anything happening. Only gentle cleanup of compression blocks, slight white balance correction and natural clarity in the existing image. It must match the real video scene, not recreate a different venue. Portrait9:16, requested2160x3840 quality. No text or logos added, no illustration, no painterly or CGI smoothing. For faces whose detail is absent, retain natural source softness rather than fabricate identity.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "poster-asador",
+      "output": "exec-d2f7c1bd-e44a-4734-a4aa-cbf8a5db18ae.png",
+      "prompt": "Faithfully restore this exact video frame for use as a sharp poster of the SAME real video. Preserve every person's identity, pose, face, age, clothing and expression, preserve exact architecture and all objects and framing. Do NOT invent faces, replace people, beautify bodies, add food or change anything happening. Only gentle cleanup of compression blocks, slight white balance correction and natural clarity in the existing image. It must match the real video scene, not recreate a different venue. Portrait9:16, requested2160x3840 quality. No text or logos added, no illustration, no painterly or CGI smoothing. For faces whose detail is absent, retain natural source softness rather than fabricate identity.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "poster-danza",
+      "output": "exec-59031027-984a-4bb8-accc-76784de4d4de.png",
+      "prompt": "Faithfully restore this exact video frame for use as a sharp poster of the SAME real video. Preserve every person's identity, pose, face, age, clothing and expression, preserve exact architecture and all objects and framing. Do NOT invent faces, replace people, beautify bodies, add food or change anything happening. Only gentle cleanup of compression blocks, slight white balance correction and natural clarity in the existing image. It must match the real video scene, not recreate a different venue. Portrait9:16, requested2160x3840 quality. No text or logos added, no illustration, no painterly or CGI smoothing. For faces whose detail is absent, retain natural source softness rather than fabricate identity.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "poster-musica-en-vivo",
+      "output": "exec-2ad212a2-3de1-4b97-9dbc-6c24a163a64c.png",
+      "prompt": "Faithfully restore this exact video frame for use as a sharp poster of the SAME real video. Preserve every person's identity, pose, face, age, clothing and expression, preserve exact architecture and all objects and framing. Do NOT invent faces, replace people, beautify bodies, add food or change anything happening. Only gentle cleanup of compression blocks, slight white balance correction and natural clarity in the existing image. It must match the real video scene, not recreate a different venue. Portrait9:16, requested2160x3840 quality. No text or logos added, no illustration, no painterly or CGI smoothing. For faces whose detail is absent, retain natural source softness rather than fabricate identity.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "ranga-arroz",
+      "output": "exec-1622ca59-e30b-4fd0-acbf-7988ecc56855.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Ranga con arroz. Faithful culinary content: Bolivian ranga, beef honeycomb tripe strips and potato in yellow aji stew beside a compact mound of steamed white rice on a white square plate. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "ranga",
+      "output": "exec-eab335a8-6968-4708-aa94-4e7ce589b79a.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Ranga. Faithful culinary content: Bolivian ranga ranga, narrow strips of honeycomb beef tripe and potato in yellow aji sauce with subtle chopped parsley, white shallow bowl, no rice in this serving. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "rinon-jugo",
+      "output": "exec-125a768a-065d-47d6-bb1c-126e8df26655.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Riñón al jugo. Faithful culinary content: sautéed small sliced beef kidney in glossy brown onion gravy, boiled potatoes, minimal chopped parsley in a white shallow bowl. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "salchipapa",
+      "output": "exec-c31b9535-62e9-43cc-ad73-04d4a455e8f8.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Salchipapa. Faithful culinary content: Bolivian salchipapa, thick cut golden French fries topped with diagonally sliced fried sausage and modest mayonnaise and ketchup, white square plate, no burgers or Mexican garnish. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "sancocho",
+      "output": "exec-ff9dd5d6-49a3-402e-a47b-8ae63905b8e3.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Sancocho. Faithful culinary content: traditional hearty Latin American sancocho, bone-in beef and chicken with potato, yuca and corn cob in golden broth, white soup bowl, no exotic garnish. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "slug": "sopa-mani",
+      "output": "exec-ab0fd753-9bbb-4068-91db-8faea2433f18.png",
+      "prompt": "Create one extremely photorealistic premium editorial FOOD PHOTOGRAPH for a Bolivian restaurant menu. Dish: Sopa de maní. Faithful culinary content: creamy ivory Bolivian peanut soup, beef morsels, diced potato, carrot and peas, short tubular pasta, a small traditional topping of fried potato sticks and parsley, white soup bowl. Uniform series art direction: a single full serving centered in a landscape 16:9 image, requested 3840x2160, full entire plate or bowl or glass visible with generous dark margins. Use deep warm charcoal brown #171411 tabletop and background, softly lit from upper left, natural restaurant food, realistic textures and imperfections, accurate cooked food, restrained appetizing lighting, crisp finest detail without plastic CGI sheen. Camera slightly above at about45 degrees for meals; gently above eye-level for drinks. The same simple white restaurant crockery across series, no hands, no people, no text, no logo, no printed menu, no flags, no invented Mexican garnishes. This is an illustrative culinary reconstruction, not documentary evidence of an exact restaurant portion. Make the food genuinely specific to the named Bolivian dish.",
+      "tool": "built-in image_gen"
+    }
+  ]
+}
