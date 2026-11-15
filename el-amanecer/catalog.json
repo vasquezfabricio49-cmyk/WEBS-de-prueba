@@ -19,13 +19,15 @@
     "price": 9,
     "priceLabel": "Consultar",
     "category": "Entradas",
-    "description": "La sopa de maní de la cocina boliviana.",
-    "image": "images/sopa-mani.webp",
-    "image4k": "images/sopa-mani-4k.webp",
-    "illustrative": true,
+    "description": "Sopa de maní, con la presentación de la imagen facilitada por el restaurante.",
+    "image": "images/sopa-mani-unified.webp",
+    "image4k": "images/sopa-mani-unified-4k.webp",
+    "illustrative": false,
     "active": true,
     "featured": false,
-    "menuSource": "Carta fotografiada facilitada por el usuario, noviembre2026"
+    "menuSource": "Carta fotografiada facilitada por el usuario, noviembre2026",
+    "originalPhoto": false,
+    "referencePhoto": true
   },
   {
     "id": "amanecer-kawi",
@@ -103,13 +105,14 @@
     "priceLabel": "Consultar",
     "category": "Entradas",
     "description": "Caldo de cardán de El Amanecer. Fotografía identificada por el restaurante.",
-    "image": "images/cardan-real.webp",
-    "image4k": "images/cardan-real.webp",
+    "image": "images/cardan-unified.webp",
+    "image4k": "images/cardan-unified-4k.webp",
     "illustrative": false,
     "active": true,
     "featured": false,
     "menuSource": "Carta fotografiada facilitada por el usuario, noviembre2026",
-    "originalPhoto": true
+    "originalPhoto": false,
+    "referencePhoto": true
   },
   {
     "id": "amanecer-ranga",
@@ -538,7 +541,7 @@
   {
     "id": "amanecer-cerdo-ensalada",
     "name": "Asadito Vallegrandino",
-    "image": "images/asadito-real.webp",
+    "image": "images/asadito-unified.webp",
     "illustrative": false,
     "description": "Asadito Vallegrandino de El Amanecer, en la fotografía original facilitada por el restaurante.",
     "active": true,
@@ -546,8 +549,9 @@
     "category": "Otros sabores",
     "price": null,
     "priceLabel": "Consultar",
-    "image4k": "images/asadito-real.webp",
-    "originalPhoto": true
+    "image4k": "images/asadito-unified-4k.webp",
+    "originalPhoto": false,
+    "referencePhoto": true
   },
   {
     "id": "amanecer-keperi",
@@ -562,5 +566,35 @@
     "active": true,
     "featured": false,
     "menuSource": "Carta fotografiada facilitada por el usuario, noviembre2026"
+  },
+  {
+    "id": "amanecer-tucumana",
+    "name": "Tucumana",
+    "description": "Tucumana rellena, según la imagen y la identificación facilitadas. Consulta disponibilidad.",
+    "category": "Otros sabores",
+    "price": null,
+    "priceLabel": "Consultar",
+    "active": true,
+    "featured": false,
+    "image": "images/tucumana-unified.webp",
+    "image4k": "images/tucumana-unified-4k.webp",
+    "illustrative": false,
+    "originalPhoto": false,
+    "referencePhoto": true
+  },
+  {
+    "id": "amanecer-saltena",
+    "name": "Salteña",
+    "description": "Salteña de pollo y huevo, según la imagen facilitada. Consulta disponibilidad.",
+    "category": "Otros sabores",
+    "price": null,
+    "priceLabel": "Consultar",
+    "active": true,
+    "featured": false,
+    "image": "images/saltena-unified.webp",
+    "image4k": "images/saltena-unified-4k.webp",
+    "illustrative": false,
+    "originalPhoto": false,
+    "referencePhoto": true
   }
 ]
