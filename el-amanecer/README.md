@@ -13,11 +13,11 @@ Las fotos reales conservan su presentación con ajustes de fondo y luz. Las imá
 
 Las 42 imágenes completas están exportadas a 3840 × 2160, con versiones adaptadas a pantalla y acceso a 4K desde cada detalle. Los dos ZIP de downloads contienen las imágenes completas. Exportar a 4K no equivale a detalle nativo 4K.
 
-## Movimiento y vídeos
+## Movimiento y galería
 
 La portada alterna platos cada 12 segundos; la sección de raíces alterna fotos cada 6,5 segundos cuando es visible. El pique fotografiado gira sobre fondo transparente, con pausa. Se respeta movimiento reducido y se pausa fuera de pantalla o con la pestaña oculta. Desactivar un plato lo retira también de las imágenes destacadas.
 
-Los cuatro vídeos originales conservan formato vertical y sonido, con limpieza suave de ruido y color y exportación a 2160 × 3840. Se ofrecen en 4K por defecto y con selector estándar para reducir datos. Los originales de WhatsApp limitan el detalle recuperable. Las miniaturas se han tratado por separado. La foto de cumpleaños conserva el original redimensionado tras el rechazo del retoque automático.
+Los cuatro vídeos se presentan como imágenes fijas en la galería, sin reproductores, selectores de calidad ni descargas de vídeo. Los originales se conservan como archivos de respaldo y no se solicitan al abrir la web. La foto de cumpleaños conserva el original redimensionado tras el rechazo del retoque automático.
 
 ## Panel y solicitudes: demo local
 

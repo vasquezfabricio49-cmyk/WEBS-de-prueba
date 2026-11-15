@@ -12,3 +12,7 @@
 .image-full-link{font-size:12px;text-decoration:underline;text-underline-offset:4px;display:inline-flex;min-height:44px;align-items:center;color:#775128}.catalog .section-head>p small{font-size:11px;line-height:1.8;display:block;margin-top:15px}
 @media(max-width:760px){.motion-toggle{right:6%;top:0;min-height:40px;font-size:10px;padding:9px 13px}.has-turntable .food-stage{width:100%;left:0;top:20px}.has-turntable #hero-dish.turntable-photo{width:78%;height:78%}.has-turntable .food-stage::before{width:78%}.country-art .photo-caption{left:15px;right:15px;bottom:12px;font-size:10px}.video-grid{grid-template-columns:1fr;gap:25px}.video-grid video{max-height:560px}.video-grid figcaption{padding:22px}.video-grid figcaption b{font-size:29px}.video-quality select{max-width:180px}.video-quality a{font-size:12px}.image-origin{font-size:8px}.roots-slide{object-fit:contain}.quality-note{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.has-turntable #hero-dish.turntable-photo{animation:none!important}.roots-slide{transition:none}}
+
+/* Static gallery: no playback, quality selectors or video downloads. */
+.video-grid .moment-photo{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;background:#090706}
+@media(max-width:760px){.video-grid .moment-photo{max-height:560px}}
