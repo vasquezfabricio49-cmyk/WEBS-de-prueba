@@ -102,13 +102,14 @@
     "price": 12,
     "priceLabel": "Consultar",
     "category": "Entradas",
-    "description": "Caldo de cardán de la carta.",
-    "image": "images/caldo-cardan.webp",
-    "image4k": "images/caldo-cardan-4k.webp",
-    "illustrative": true,
+    "description": "Caldo de cardán de El Amanecer. Fotografía identificada por el restaurante.",
+    "image": "images/cardan-real.webp",
+    "image4k": "images/cardan-real.webp",
+    "illustrative": false,
     "active": true,
     "featured": false,
-    "menuSource": "Carta fotografiada facilitada por el usuario, noviembre2026"
+    "menuSource": "Carta fotografiada facilitada por el usuario, noviembre2026",
+    "originalPhoto": true
   },
   {
     "id": "amanecer-ranga",
@@ -535,30 +536,18 @@
     "illustrative": false
   },
   {
-    "id": "amanecer-caldo-pollo",
-    "name": "Caldo de pollo",
-    "category": "Otros sabores",
-    "description": "Caldo de la casa con pollo, huevo, patata y cebollín.",
-    "price": null,
-    "priceLabel": "Consultar",
-    "featured": false,
-    "active": true,
-    "image": "images/caldo-pollo.webp",
-    "image4k": "images/caldo-pollo-4k.webp",
-    "illustrative": false
-  },
-  {
     "id": "amanecer-cerdo-ensalada",
-    "name": "Cerdo con arroz y ensalada",
-    "image": "images/cerdo-ensalada.webp",
+    "name": "Asadito Vallegrandino",
+    "image": "images/asadito-real.webp",
     "illustrative": false,
-    "description": "Presentación fotografiada en la cocina del restaurante. Consulta su nombre y disponibilidad.",
+    "description": "Asadito Vallegrandino de El Amanecer, en la fotografía original facilitada por el restaurante.",
     "active": true,
     "featured": false,
     "category": "Otros sabores",
     "price": null,
     "priceLabel": "Consultar",
-    "image4k": "images/cerdo-ensalada-4k.webp"
+    "image4k": "images/asadito-real.webp",
+    "originalPhoto": true
   },
   {
     "id": "amanecer-keperi",
