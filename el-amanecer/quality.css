@@ -27,3 +27,5 @@
 
 /* Informational menu: no cart or order flow. */
 body{padding-bottom:0!important}.roots-slide{transform:none!important;animation:none!important;transition:opacity .7s linear!important}.card .price-row{justify-content:flex-start}.dialog-copy .price-row{justify-content:flex-start}
+
+.cooking-gallery>figure>img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.virgencita-gallery video,.cooking-gallery video{pointer-events:none}

@@ -1,0 +1,16 @@
+{
+  "restaurantName": "Restaurante El Amanecer",
+  "timezone": "Europe/Madrid",
+  "minimumNoticeMinutes": 90,
+  "confirmationMode": "automatic_if_available",
+  "productionEnabled": false,
+  "openingHours": null,
+  "tables": null,
+  "mealDurationMinutes": null,
+  "pending": [
+    "Confirmar horarios y excepciones",
+    "Confirmar mesas/capacidad y combinaciones permitidas",
+    "Confirmar duración de ocupación de una mesa",
+    "Conectar base de datos privada y avisos"
+  ]
+}
