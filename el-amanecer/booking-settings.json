@@ -53,11 +53,88 @@
       "closesNextDay": false
     }
   ],
-  "tables": null,
-  "mealDurationMinutes": null,
+  "tables": [
+    {
+      "label": "Mesa 01",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 02",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 03",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 04",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 05",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 06",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 07",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 08",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 09",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 10",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 11",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 12",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    },
+    {
+      "label": "Mesa 13",
+      "capacity": 6,
+      "minimumPeople": 2,
+      "active": true
+    }
+  ],
+  "mealDurationMinutes": 120,
   "pending": [
-    "Confirmar mesas/capacidad y combinaciones permitidas",
-    "Confirmar duración de ocupación de una mesa",
     "Conectar base de datos privada y avisos",
     "Confirmar máximo de personas por reserva",
     "Conectar panel compartido, cancelaciones, cambios y avisos a ambas partes"
@@ -72,7 +149,11 @@
     "eventLayoutTables": 8,
     "minimumPeoplePerTable": 2,
     "maximumPeoplePerTable": 6,
-    "needsLayoutConfirmation": true
+    "needsLayoutConfirmation": false
+  },
+  "eventLayout": {
+    "tables": 8,
+    "bookingMode": "contact_restaurant"
   }
 }
 
