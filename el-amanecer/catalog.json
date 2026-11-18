@@ -19,7 +19,7 @@
     "price": 9,
     "priceLabel": "Consultar",
     "category": "Entradas",
-    "description": "Sopa de maní, con la presentación de la imagen facilitada por el restaurante.",
+    "description": "Sopa de maní de la cocina boliviana.",
     "image": "images/sopa-mani-unified.webp",
     "image4k": "images/sopa-mani-unified-4k.webp",
     "illustrative": false,
@@ -90,7 +90,7 @@
     "price": 9,
     "priceLabel": "Consultar",
     "category": "Entradas",
-    "description": "Sopa de chairo, nombre confirmado por el restaurante.",
+    "description": "Sopa de chairo boliviana.",
     "image": "images/chairo.webp",
     "image4k": "images/chairo-4k.webp",
     "illustrative": true,
@@ -104,7 +104,7 @@
     "price": 12,
     "priceLabel": "Consultar",
     "category": "Entradas",
-    "description": "Caldo de cardán de El Amanecer. Fotografía identificada por el restaurante.",
+    "description": "Caldo de cardán.",
     "image": "images/cardan-unified.webp",
     "image4k": "images/cardan-unified-4k.webp",
     "illustrative": false,
@@ -218,7 +218,7 @@
     "price": 14,
     "priceLabel": "Consultar",
     "category": "Platos principales",
-    "description": "Milanesa a elegir: carne o pollo. Opciones confirmadas por el restaurante.",
+    "description": "Milanesa a elegir: carne o pollo.",
     "image": "images/milanesa.webp",
     "image4k": "images/milanesa-4k.webp",
     "illustrative": true,
@@ -543,7 +543,7 @@
     "name": "Asadito Vallegrandino",
     "image": "images/asadito-unified.webp",
     "illustrative": false,
-    "description": "Asadito Vallegrandino de El Amanecer, en la fotografía original facilitada por el restaurante.",
+    "description": "Asadito Vallegrandino de la casa.",
     "active": true,
     "featured": false,
     "category": "Otros sabores",
@@ -570,7 +570,7 @@
   {
     "id": "amanecer-tucumana",
     "name": "Tucumana",
-    "description": "Tucumana rellena, según la imagen y la identificación facilitadas. Consulta disponibilidad.",
+    "description": "Tucumana rellena. Consulta disponibilidad.",
     "category": "Otros sabores",
     "price": null,
     "priceLabel": "Consultar",
@@ -585,7 +585,7 @@
   {
     "id": "amanecer-saltena",
     "name": "Salteña",
-    "description": "Salteña de pollo y huevo, según la imagen facilitada. Consulta disponibilidad.",
+    "description": "Salteña de pollo y huevo. Consulta disponibilidad.",
     "category": "Otros sabores",
     "price": null,
     "priceLabel": "Consultar",
@@ -598,3 +598,4 @@
     "referencePhoto": true
   }
 ]
+
