@@ -4,13 +4,69 @@
   "minimumNoticeMinutes": 90,
   "confirmationMode": "automatic_if_available",
   "productionEnabled": false,
-  "openingHours": null,
+  "openingHours": [
+    {
+      "weekday": 1,
+      "label": "Lunes",
+      "opens": "10:00",
+      "closes": "22:00",
+      "closesNextDay": false
+    },
+    {
+      "weekday": 2,
+      "label": "Martes",
+      "opens": "10:00",
+      "closes": "18:00",
+      "closesNextDay": false
+    },
+    {
+      "weekday": 3,
+      "label": "Miércoles",
+      "closed": true
+    },
+    {
+      "weekday": 4,
+      "label": "Jueves",
+      "opens": "10:00",
+      "closes": "22:00",
+      "closesNextDay": false
+    },
+    {
+      "weekday": 5,
+      "label": "Viernes",
+      "opens": "09:00",
+      "closes": "02:30",
+      "closesNextDay": true
+    },
+    {
+      "weekday": 6,
+      "label": "Sábado",
+      "opens": "09:00",
+      "closes": "02:30",
+      "closesNextDay": true
+    },
+    {
+      "weekday": 0,
+      "label": "Domingo",
+      "opens": "09:00",
+      "closes": "22:00",
+      "closesNextDay": false
+    }
+  ],
   "tables": null,
   "mealDurationMinutes": null,
   "pending": [
-    "Confirmar horarios y excepciones",
     "Confirmar mesas/capacidad y combinaciones permitidas",
     "Confirmar duración de ocupación de una mesa",
-    "Conectar base de datos privada y avisos"
-  ]
+    "Conectar base de datos privada y avisos",
+    "Confirmar horario de festivos y miércoles festivos",
+    "Confirmar máximo de personas por reserva",
+    "Conectar panel compartido, cancelaciones, cambios y avisos a ambas partes"
+  ],
+  "holidays": {
+    "open": true,
+    "hours": null,
+    "wednesdayOverride": null
+  }
 }
+
