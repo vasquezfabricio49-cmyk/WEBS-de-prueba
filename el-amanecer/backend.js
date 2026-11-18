@@ -3,7 +3,7 @@
  const editor=location.pathname.endsWith('/editor.html');
  const B=window.AmanecerBackend={enabled:false,site:null,revision:0,bookings:[],token:'',config:null};
  const errors={REVISION_CONFLICT:'Otra persona ha guardado cambios. Recarga antes de editar.',NO_AVAILABILITY:'No queda una mesa para ese horario.',NOTICE_REQUIRED:'Reserva con al menos 2 horas de antelación.',OUTSIDE_OPENING_HOURS:'Ese horario no permite completar las 2 horas de mesa.',CONFIGURATION_REQUIRED:'Las reservas aún no están activadas.',INVALID_ACTION:'Esta reserva ya no admite ese cambio.',FORBIDDEN:'No tienes permiso para acceder.',BOT_CHECK_FAILED:'Repite la comprobación de seguridad.',TRY_LATER:'Demasiados intentos. Espera unos minutos.',INVALID_INPUT:'Revisa los datos del formulario.'};
- const friendly=e=>errors[e?.message]||'No se ha podido completar la operación. Inténtalo de nuevo.';B.friendly=friendly;
+ const friendly=e=>e?.message==='NOTICE_REQUIRED'?'Reserva con al menos '+(B.policy?.minimumNoticeMinutes||120)+' minutos de antelación.':errors[e?.message]||'No se ha podido completar la operación. Inténtalo de nuevo.';B.friendly=friendly;
  async function api(path,body,method='POST',staff=false){
   if(!B.config)throw Error('CONFIGURATION_REQUIRED');
   const r=await fetch(B.config.supabaseUrl+path,{method,headers:{apikey:B.config.publishableKey,...(staff?{Authorization:'Bearer '+B.token}:{}),...(body===undefined?{}:{'Content-Type':'application/json'})},...(body===undefined?{}:{body:JSON.stringify(body)}),signal:AbortSignal.timeout(20000)});
