@@ -1,7 +1,7 @@
 {
   "restaurantName": "Restaurante El Amanecer",
   "timezone": "Europe/Madrid",
-  "minimumNoticeMinutes": 90,
+  "minimumNoticeMinutes": 120,
   "confirmationMode": "automatic_if_available",
   "productionEnabled": false,
   "openingHours": [
@@ -59,14 +59,20 @@
     "Confirmar mesas/capacidad y combinaciones permitidas",
     "Confirmar duración de ocupación de una mesa",
     "Conectar base de datos privada y avisos",
-    "Confirmar horario de festivos y miércoles festivos",
     "Confirmar máximo de personas por reserva",
     "Conectar panel compartido, cancelaciones, cambios y avisos a ambas partes"
   ],
   "holidays": {
     "open": true,
-    "hours": null,
-    "wednesdayOverride": null
+    "followWeeklyHours": true,
+    "wednesdayClosed": true
+  },
+  "capacityProposal": {
+    "diningTables": 13,
+    "eventLayoutTables": 8,
+    "minimumPeoplePerTable": 2,
+    "maximumPeoplePerTable": 6,
+    "needsLayoutConfirmation": true
   }
 }
 
